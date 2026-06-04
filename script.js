@@ -1,4 +1,4 @@
-const shopPhone = "919876543210";
+const shopPhone = "+91-XXXX";
 
 const products = [
   {
