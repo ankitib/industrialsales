@@ -150,6 +150,7 @@ textarea {
   position: relative;
   z-index: 2;
   color: white;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.34);
 }
 
 h1,
@@ -318,6 +319,23 @@ h3 {
   height: 100%;
   aspect-ratio: auto;
   object-fit: cover;
+}
+
+.hero-media-product {
+  background: #ffffff;
+}
+
+.hero-media-product::after {
+  background:
+    linear-gradient(90deg, rgba(8, 20, 26, 0.54) 0%, rgba(8, 20, 26, 0.3) 38%, rgba(8, 20, 26, 0) 100%),
+    linear-gradient(180deg, rgba(8, 20, 26, 0), rgba(8, 20, 26, 0.04));
+}
+
+.hero-media-product img {
+  box-sizing: border-box;
+  object-fit: contain;
+  object-position: 78% center;
+  padding: clamp(40px, 7vw, 72px) clamp(46px, 8vw, 72px) clamp(24px, 5vw, 52px) clamp(10px, 4vw, 48px);
 }
 
 .trust-band,
@@ -959,6 +977,11 @@ address a {
 
   .hero-media img {
     aspect-ratio: 4 / 5;
+  }
+
+  .hero-media-product img {
+    object-position: right center;
+    padding: clamp(44px, 5vw, 74px) clamp(46px, 5vw, 70px) clamp(30px, 4vw, 56px) clamp(140px, 16vw, 230px);
   }
 
   .trust-band {

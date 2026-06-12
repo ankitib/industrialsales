@@ -45,22 +45,10 @@ const products = [
     source: "https://www.dutronindia.com/suction-hose/flexible-pvc-hose-pipes/"
   },
   {
-    id: "heavy-duty-pu-lined",
-    name: "Heavy Duty PU Lined Hose",
-    category: "Suction Hose",
-    image: "assets/dutron-suction-hose.png",
-    tags: "suction hose heavy duty pu lined abrasion industrial",
-    summary: "Heavy-duty suction hose with PU lining for tougher handling where abrasion resistance is important.",
-    specs: [["Type", "Heavy-duty PU lined hose"], ["Construction", "PVC hose with PU lining"], ["Use", "Abrasive and heavy-duty transfer"], ["Availability", "Confirm size and grade"]],
-    details: ["Listed by Dutron as part of the suction hose family.", "Best positioned for customers asking for higher durability than regular suction hose."],
-    applications: ["Industrial transfer", "Abrasive material handling", "Heavy-duty suction"],
-    source: "https://www.dutronindia.com/suction-hose/heavy-duty-pu-lined-hose/"
-  },
-  {
     id: "heavy-duty-suction",
     name: "Heavy Duty Suction Hose",
     category: "Suction Hose",
-    image: "assets/dutron-suction-hose.png",
+    image: "assets/heavy-duty-hose-prd.jpg",
     tags: "suction hose heavy duty water agriculture industrial",
     summary: "Heavy-duty suction hose option for demanding water and material suction applications.",
     specs: [["Type", "Heavy-duty suction hose"], ["Use", "Suction and delivery"], ["Material", "PVC hose system"], ["Availability", "Confirm size and pressure"]],
@@ -187,6 +175,39 @@ const products = [
     details: ["Dutron lists PU Hose as its own product family.", "Use this listing for customers asking for duct, flexible PU or industrial hose needs."],
     applications: ["Industrial ducting", "Flexible transfer", "Dust or air handling enquiries"],
     source: "https://www.dutronindia.com/pu-hose/"
+  },
+  {
+    id: "duct-hose",
+    name: "Duct Hose",
+    category: "Duct Hose",
+    image: "assets/DuctHose.png",
+    tags: "duct hose industrial agriculture suction delivery air gases hvac fume dust cereals powder liquids flexible",
+    summary: "Very light, extra-flexible duct hose for light-duty suction and delivery, air movement, HVAC, fume removal and light material handling.",
+    specs: [
+      ["Type", "Duct hose"],
+      ["Use", "Light-duty suction and delivery"],
+      ["Available sizes", "16-300 mm I.D."],
+      ["Also available", "Duct Hose - Heavy with square type corrugated outer surface"]
+    ],
+    details: [
+      "Very light in weight.",
+      "Extra flexible, hence easy to install.",
+      "Rigid outer reinforcement, hence easy handling.",
+      "Also available as Duct Hose - Heavy with square type corrugated outer surface."
+    ],
+    applications: [
+      "Light-duty suction and delivery",
+      "Conveying air and gases",
+      "Cold and warm air installation",
+      "Cooling of motors",
+      "Heating, ventilating and air conditioning systems",
+      "Fume removal",
+      "Handling dust and light materials",
+      "Vacuum cleaning equipment",
+      "Transporting wheat and other cereals",
+      "Transporting powder, gases and liquids"
+    ],
+    source: "https://www.dutronindia.com/"
   },
   {
     id: "upvc-borewell",
