@@ -410,9 +410,14 @@ h3 {
 }
 
 .section {
+  scroll-margin-top: 128px;
   padding-top: 58px;
   padding-bottom: 60px;
   background: transparent;
+}
+
+.quote-section {
+  scroll-margin-top: 128px;
 }
 
 .section-heading {
@@ -513,6 +518,89 @@ h3 {
   border-radius: var(--radius);
   background: var(--surface);
   box-shadow: var(--shadow-soft);
+}
+
+.brochure-groups {
+  display: grid;
+  gap: 14px;
+}
+
+.brochure-group {
+  display: grid;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.brochure-check {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.brochure-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--steel);
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 850;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.brochure-toggle::after {
+  content: "+";
+  display: grid;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 7px;
+  background: rgba(0, 143, 79, 0.1);
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
+.brochure-check:checked + .brochure-toggle::after {
+  content: "-";
+}
+
+.brochure-list {
+  display: grid;
+  gap: 8px;
+  padding-top: 2px;
+}
+
+.brochure-check:not(:checked) ~ .brochure-list {
+  display: none;
+}
+
+.brochure-link {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  border: 1px solid rgba(0, 143, 79, 0.16);
+  border-radius: 7px;
+  padding: 10px 12px;
+  background: rgba(0, 143, 79, 0.06);
+  color: var(--green-dark);
+  font-size: 14px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
 }
 
 .clickable-card {
@@ -1055,6 +1143,11 @@ address a {
   .section-heading,
   .quote-section {
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 0.7fr);
+    align-items: start;
+  }
+
+  .brochure-groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: start;
   }
 
