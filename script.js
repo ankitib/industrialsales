@@ -1,201 +1,409 @@
-const shopPhone = "+91-XXXX";
+const shopPhone = "919336121245";
 
 const products = [
   {
-    id: "md-green",
-    name: "M.D. Green Suction & Delivery Hose",
-    category: "Suction Hose",
-    image: "assets/dutron-md-green.jpg",
-    tags: "suction hose agriculture industrial irrigation water chemical green",
-    summary: "Medium-duty PVC suction and delivery hose for irrigation water, saline water, light acids and alkalies, except solvents.",
-    specs: [
-      ["Sizes", "20-100 mm I.D."],
-      ["Working pressure", "3.5-7 kg/cm2"],
-      ["Bursting pressure", "11-24 kg/cm2"],
-      ["Colour", "Green"],
-      ["Max temperature", "60/70C"],
-      ["Lengths", "15-50 m, depending on size"]
+    "id": "md-green",
+    "name": "M.D. Green Suction & Delivery Hose",
+    "category": "Suction Hose",
+    "image": "assets/dutron-md-green.jpg",
+    "tags": "suction hose agriculture industrial irrigation water chemical green",
+    "summary": "Medium-duty PVC suction and delivery hose for irrigation water, saline water, light acids and alkalies, except solvents.",
+    "specs": [
+      [
+        "Sizes",
+        "20-100 mm I.D."
+      ],
+      [
+        "Working pressure",
+        "3.5-7 kg/cm2"
+      ],
+      [
+        "Bursting pressure",
+        "11-24 kg/cm2"
+      ],
+      [
+        "Colour",
+        "Green"
+      ],
+      [
+        "Max temperature",
+        "60/70C"
+      ],
+      [
+        "Lengths",
+        "15-50 m, depending on size"
+      ]
     ],
-    details: [
+    "details": [
       "Hard spirals of rigid PVC are secured in a soft PVC wall to provide strength and flexibility.",
       "Listed by Dutron as lighter and more flexible than rubber hose.",
       "Designed to resist kinking, bulging and bursting in rigorous working conditions."
     ],
-    applications: ["Agriculture irrigation", "Water suction and delivery", "Saline water", "Light acids and alkalies"],
-    table: [
-      ["Size", "Nominal", "I.D.", "O.D.", "Bend radius", "Working", "Bursting", "Length"],
-      ["3/4 in", "20 mm", "19.0 +/- 0.5", "23.6 +/- 1.0", "45 mm", "7.0", "24.0", "30/50 m"],
-      ["1 in", "25 mm", "25.4 +/- 0.5", "30.0 +/- 1.0", "55 mm", "7.0", "23.0", "30/50 m"],
-      ["1-1/2 in", "40 mm", "38.0 +/- 0.5", "43.3 +/- 1.0", "95 mm", "5.0", "16.0", "30/50 m"],
-      ["2 in", "50 mm", "50.8 +/- 0.5", "57.8 +/- 1.5", "122 mm", "4.0", "16.0", "30/45/50 m"],
-      ["4 in", "100 mm", "101.2 +/- 1.0", "112.2 +/- 2.0", "290 mm", "3.5", "11.0", "15/18/30 m"]
+    "applications": [
+      "Agriculture irrigation",
+      "Water suction and delivery",
+      "Saline water",
+      "Light acids and alkalies"
     ],
-    source: "https://www.dutronindia.com/suction-hose/suction-and-delivery-hose-manufacturers/"
-  },
-  {
-    id: "flexible-pvc",
-    name: "Flexible PVC Hose Pipes",
-    category: "Suction Hose",
-    image: "assets/dutron-suction-hose.png",
-    tags: "suction hose flexible pvc agriculture industrial water",
-    summary: "Flexible PVC hose pipe range for suction and delivery requirements across agriculture and industrial water handling.",
-    specs: [["Type", "Flexible PVC hose"], ["Use", "Suction and delivery"], ["Material", "PVC"], ["Availability", "Confirm size and coil length"]],
-    details: ["Dutron lists this under its suction hose range for flexible transfer requirements.", "Useful where lighter handling and flexible routing are needed."],
-    applications: ["Agriculture", "Water transfer", "General industrial use"],
-    source: "https://www.dutronindia.com/suction-hose/flexible-pvc-hose-pipes/"
-  },
-  {
-    id: "heavy-duty-suction",
-    name: "Heavy Duty Suction Hose",
-    category: "Suction Hose",
-    image: "assets/heavy-duty-hose-prd.jpg",
-    tags: "suction hose heavy duty water agriculture industrial",
-    summary: "Heavy-duty suction hose option for demanding water and material suction applications.",
-    specs: [["Type", "Heavy-duty suction hose"], ["Use", "Suction and delivery"], ["Material", "PVC hose system"], ["Availability", "Confirm size and pressure"]],
-    details: ["Dutron places this in its suction hose product family.", "Suitable for buyers who need stronger suction hose for site or farm work."],
-    applications: ["Agriculture", "Industrial sites", "Water suction"],
-    source: "https://www.dutronindia.com/suction-hose/heavy-duty-suction-hose/"
-  },
-  {
-    id: "non-toxic-pvc",
-    name: "Non Toxic PVC Hose",
-    category: "Suction Hose",
-    image: "assets/dutron-suction-hose.png",
-    tags: "suction hose non toxic pvc food water transfer",
-    summary: "Non-toxic PVC hose for applications where regular industrial hose is not suitable.",
-    specs: [["Type", "Non-toxic PVC hose"], ["Use", "Non-toxic transfer"], ["Material", "PVC"], ["Availability", "Confirm grade and size"]],
-    details: ["Listed by Dutron under suction hose products.", "Ask for suitability before use with any potable, food or sensitive transfer application."],
-    applications: ["Non-toxic transfer", "Water movement", "Light-duty suction and delivery"],
-    source: "https://www.dutronindia.com/suction-hose/non-toxic-pvc-hose/"
-  },
-  {
-    id: "oil-suction",
-    name: "Oil Suction & Discharge Hose",
-    category: "Suction Hose",
-    image: "assets/dutron-suction-hose.png",
-    tags: "suction hose oil discharge industrial transfer",
-    summary: "Oil suction and discharge hose for petroleum or oil-handling enquiries where compatible hose is required.",
-    specs: [["Type", "Oil suction and discharge hose"], ["Use", "Oil suction/discharge"], ["Application", "Industrial transfer"], ["Availability", "Confirm compatibility"]],
-    details: ["Dutron lists oil suction and discharge hose as a separate suction hose product.", "Application compatibility should be confirmed before supply."],
-    applications: ["Oil transfer", "Industrial discharge", "Suction and delivery"],
-    source: "https://www.dutronindia.com/suction-hose/oil-suction-and-discharge-hose/"
-  },
-  {
-    id: "high-pressure-air",
-    name: "Duplon High Pressure Air Hose",
-    category: "Duplon Braided Hose",
-    image: "assets/dutron-air-hose.jpg",
-    tags: "duplon braided hose air pressure compressor pneumatic industrial",
-    summary: "Duplon PVC braided high-pressure hose for compressed air and industrial pneumatic use.",
-    specs: [["Brand", "Duplon"], ["Type", "PVC braided air hose"], ["Use", "Compressed air"], ["Category", "Duplon braided hose"], ["Sizes", "5-75 mm I.D. listed"]],
-    details: ["Dutron presents Duplon as its braided hose brand for high-pressure applications.", "Duplon uses synthetic-yarn braiding between two or more layers of soft PVC for pressure capacity and flexibility.", "Dutron positions Duplon as a lightweight, economical replacement to conventional rubber hoses."],
-    applications: ["Compressed air", "Pneumatic tools", "Workshop and construction use"],
-    source: "https://www.dutronindia.com/braided-hose/high-pressure-air-hose/"
-  },
-  {
-    id: "construction-water",
-    name: "Duplon Water / Garden / Construction Hose",
-    category: "Duplon Braided Hose",
-    image: "assets/dutron-construction-water-hose.jpg",
-    tags: "duplon braided hose water garden construction irrigation yellow black",
-    summary: "Duplon braided hose for water, garden and construction-site conveying applications.",
-    specs: [["Brand", "Duplon"], ["Sizes", "12-50 mm I.D."], ["Working pressure", "5-10 kg/cm2"], ["Colour", "Yellow-black"], ["Use", "Water conveying"]],
-    details: ["Dutron lists Water/Garden/Construction Water Hose under its Duplon braided hose family.", "The Duplon braided construction uses synthetic-yarn reinforcement inside soft PVC layers.", "Useful for customers asking for garden, water and site hose."],
-    applications: ["Construction sites", "Garden and water supply", "Engineering sites"],
-    source: "https://www.dutronindia.com/braided-hose/garden-water-hose-manufacturers/"
-  },
-  {
-    id: "welding-hose",
-    name: "Duplon High Pressure Welding Hose",
-    category: "Duplon Braided Hose",
-    image: "assets/dutron-duplon-braided.png",
-    tags: "duplon braided hose welding gas high pressure industrial",
-    summary: "Duplon high-pressure welding hose listed by Dutron for welding and gas-line related enquiries.",
-    specs: [["Brand", "Duplon"], ["Type", "High-pressure welding hose"], ["Category", "Duplon braided hose"], ["Use", "Welding applications"], ["Availability", "Confirm colour, size and gas compatibility"]],
-    details: ["Dutron includes Welding Hose in the Duplon braided hose range.", "Duplon is designed for high-pressure applications and tropical climates.", "Application and safety compatibility should be confirmed before supply."],
-    applications: ["Welding lines", "Industrial workshops", "Gas handling enquiries"],
-    source: "https://www.dutronindia.com/braided-hose/high-pressure-welding-hose/"
-  },
-  {
-    id: "spray-car-wash",
-    name: "Duplon Spray & Car Wash Power Hose",
-    category: "Duplon Braided Hose",
-    image: "assets/dutron-duplon-braided.png",
-    tags: "duplon braided hose spray car wash power pressure washing rock drill",
-    summary: "Duplon power hose for spray, car wash, rock-drill and pressure-washing applications.",
-    specs: [["Brand", "Duplon"], ["Type", "Spray/car-wash power hose"], ["Category", "Duplon braided hose"], ["Use", "Spray and washing"], ["Availability", "Confirm size and working pressure"]],
-    details: ["Dutron lists Spray/CW Power/Rock Drill Hose within the Duplon braided hose family.", "Duplon braided hoses are positioned as crush and kink resistant, rodent proof, and resistant to oil, light chemicals and moisture.", "A good fit for service centres, cleaning users and pressure-washing enquiries."],
-    applications: ["Car washing", "Spray lines", "Cleaning equipment"],
-    source: "https://www.dutronindia.com/braided-hose/spray-car-wash-power-hose/"
-  },
-  {
-    id: "steel-wire-thunder",
-    name: "Duplon Steel Wire Hose / Thunder Hose",
-    category: "Duplon Braided Hose",
-    image: "assets/dutron-duplon-braided.png",
-    tags: "duplon steel wire hose thunder braided industrial suction discharge",
-    summary: "Duplon Steel Wire / Thunder Hose for customers needing tougher reinforced hose options.",
-    specs: [["Brand", "Duplon"], ["Type", "Steel wire reinforced hose"], ["Brand family", "Thunder Hose"], ["Use", "Industrial transfer"], ["Availability", "Confirm size and duty"]],
-    details: ["Dutron lists Steel Wire Hose as part of the braided hose range shown with the Duplon brand.", "Useful where reinforcement and durability are key purchase requirements.", "Confirm application, size and duty before supply."],
-    applications: ["Industrial transfer", "Reinforced hose use", "Site applications"],
-    source: "https://www.dutronindia.com/braided-hose/steel-wire-hose-thunder-hose-manufacturer/"
-  },
-  {
-    id: "super-spray",
-    name: "Duplon Super Spray & Car Washing Hose",
-    category: "Duplon Braided Hose",
-    image: "assets/dutron-duplon-braided.png",
-    tags: "duplon super spray car washing hose braided cleaning",
-    summary: "Duplon Super Spray and car-washing hose for cleaning, washing and spray applications.",
-    specs: [["Brand", "Duplon"], ["Type", "Super spray hose"], ["Category", "Duplon braided hose"], ["Use", "Spray and washing"], ["Availability", "Confirm size and pressure"]],
-    details: ["Dutron includes Super Spray and Car Washing Hose in the Duplon braided hose family.", "Duplon is described by Dutron as superior to conventional rubber hoses for high-pressure uses.", "Position this for customers who want a dedicated cleaning/washing hose."],
-    applications: ["Car washing", "Spraying", "Cleaning service use"],
-    source: "https://www.dutronindia.com/braided-hose/super-spray-and-car-washing-hose/"
-  },
-  {
-    id: "lay-flat",
-    name: "Lay Flat Hose",
-    category: "Flat Hose",
-    image: "assets/dutron-flat-hose.png",
-    tags: "flat hose lay flat agriculture construction discharge delivery irrigation mining marine",
-    summary: "Lay-flat delivery hose for agriculture, construction, mines, quarries, marine transfer and liquid discharge.",
-    specs: [["Type", "Lay-flat hose"], ["Use", "Delivery/discharge"], ["Storage", "Flat roll"], ["Availability", "Confirm size and length"]],
-    details: ["Dutron’s flat hose range is designed for discharge and delivery where compact storage matters.", "A practical listing for agriculture and construction water movement."],
-    applications: ["Irrigation", "Construction discharge", "Mines and quarries", "Marine use"],
-    source: "https://www.dutronindia.com/lay-flat-hose-manufacturer/"
-  },
-  {
-    id: "pu-hose",
-    name: "PU Hose",
-    category: "PU Hose",
-    image: "assets/dutron-flat-hose.png",
-    tags: "pu hose duct flexible industrial ventilation dust",
-    summary: "PU hose range for ducting and flexible industrial applications.",
-    specs: [["Type", "PU hose"], ["Use", "Flexible ducting/transfer"], ["Category", "PU hose"], ["Availability", "Confirm size and grade"]],
-    details: ["Dutron lists PU Hose as its own product family.", "Use this listing for customers asking for duct, flexible PU or industrial hose needs."],
-    applications: ["Industrial ducting", "Flexible transfer", "Dust or air handling enquiries"],
-    source: "https://www.dutronindia.com/pu-hose/"
-  },
-  {
-    id: "duct-hose",
-    name: "Duct Hose",
-    category: "Duct Hose",
-    image: "assets/DuctHose.png",
-    tags: "duct hose industrial agriculture suction delivery air gases hvac fume dust cereals powder liquids flexible",
-    summary: "Very light, extra-flexible duct hose for light-duty suction and delivery, air movement, HVAC, fume removal and light material handling.",
-    specs: [
-      ["Type", "Duct hose"],
-      ["Use", "Light-duty suction and delivery"],
-      ["Available sizes", "16-300 mm I.D."],
-      ["Also available", "Duct Hose - Heavy with square type corrugated outer surface"]
+    "table": [
+      [
+        "Size",
+        "Nominal",
+        "I.D.",
+        "O.D.",
+        "Bend radius",
+        "Working",
+        "Bursting",
+        "Length"
+      ],
+      [
+        "3/4 in",
+        "20 mm",
+        "19.0 +/- 0.5",
+        "23.6 +/- 1.0",
+        "45 mm",
+        "7.0",
+        "24.0",
+        "30/50 m"
+      ],
+      [
+        "1 in",
+        "25 mm",
+        "25.4 +/- 0.5",
+        "30.0 +/- 1.0",
+        "55 mm",
+        "7.0",
+        "23.0",
+        "30/50 m"
+      ],
+      [
+        "1-1/2 in",
+        "40 mm",
+        "38.0 +/- 0.5",
+        "43.3 +/- 1.0",
+        "95 mm",
+        "5.0",
+        "16.0",
+        "30/50 m"
+      ],
+      [
+        "2 in",
+        "50 mm",
+        "50.8 +/- 0.5",
+        "57.8 +/- 1.5",
+        "122 mm",
+        "4.0",
+        "16.0",
+        "30/45/50 m"
+      ],
+      [
+        "4 in",
+        "100 mm",
+        "101.2 +/- 1.0",
+        "112.2 +/- 2.0",
+        "290 mm",
+        "3.5",
+        "11.0",
+        "15/18/30 m"
+      ]
     ],
-    details: [
+    "source": "https://www.dutronindia.com/suction-hose/suction-and-delivery-hose-manufacturers/"
+  },
+  {
+    "id": "heavy-duty-suction",
+    "name": "Heavy Duty Suction Hose",
+    "category": "Suction Hose",
+    "image": "assets/heavy-duty-hose-prd.jpg",
+    "tags": "suction hose heavy duty water agriculture industrial",
+    "summary": "Heavy-duty suction hose option for demanding water and material suction applications.",
+    "specs": [
+      [
+        "Type",
+        "Heavy-duty suction hose"
+      ],
+      [
+        "Use",
+        "Suction and delivery"
+      ],
+      [
+        "Material",
+        "PVC hose system"
+      ],
+      [
+        "Availability",
+        "Confirm size and pressure"
+      ]
+    ],
+    "details": [
+      "Dutron places this in its suction hose product family.",
+      "Suitable for buyers who need stronger suction hose for site or farm work."
+    ],
+    "applications": [
+      "Agriculture",
+      "Industrial sites",
+      "Water suction"
+    ],
+    "source": "https://www.dutronindia.com/suction-hose/heavy-duty-suction-hose/"
+  },
+  {
+    "id": "non-toxic-pvc",
+    "name": "Non Toxic Steel Wire Food Grade Hose",
+    "category": "Suction Hose",
+    "image": "assets/SteelWireNonToxic.png",
+    "tags": "suction hose non toxic pvc food water transfer",
+    "summary": "Non-toxic PVC hose for applications where regular industrial hose is not suitable.",
+    "specs": [
+      [
+        "Type",
+        "Non-toxic PVC hose"
+      ],
+      [
+        "Use",
+        "Non-toxic transfer"
+      ],
+      [
+        "Material",
+        "PVC"
+      ],
+      [
+        "Availability",
+        "Confirm grade and size"
+      ]
+    ],
+    "details": [
+      "Listed by Dutron under suction hose products.",
+      "Ask for suitability before use with any potable, food or sensitive transfer application."
+    ],
+    "applications": [
+      "Non-toxic transfer",
+      "Water movement",
+      "Light-duty suction and delivery"
+    ],
+    "source": "https://www.dutronindia.com/suction-hose/non-toxic-pvc-hose/"
+  },
+  {
+    "id": "oil-suction",
+    "name": "Oil Suction Hose",
+    "category": "Suction Hose",
+    "image": "assets/oil-hose.jpg",
+    "tags": "suction hose oil discharge industrial transfer",
+    "summary": "Oil suction and discharge hose for petroleum or oil-handling enquiries where compatible hose is required.",
+    "specs": [
+      [
+        "Type",
+        "Oil suction and discharge hose"
+      ],
+      [
+        "Use",
+        "Oil suction/discharge"
+      ],
+      [
+        "Application",
+        "Industrial transfer"
+      ],
+      [
+        "Availability",
+        "Confirm compatibility"
+      ]
+    ],
+    "details": [
+      "Dutron lists oil suction and discharge hose as a separate suction hose product.",
+      "Application compatibility should be confirmed before supply."
+    ],
+    "applications": [
+      "Oil transfer",
+      "Industrial discharge",
+      "Suction and delivery"
+    ],
+    "source": "https://www.dutronindia.com/suction-hose/oil-suction-and-discharge-hose/"
+  },
+  {
+    "id": "high-pressure-air",
+    "name": "Duplon High Pressure Air Hose (Nylon Braided)",
+    "category": "Duplon Braided Hose",
+    "image": "assets/dutron-air-hose.jpg",
+    "tags": "duplon braided hose air pressure compressor pneumatic industrial",
+    "summary": "Duplon PVC braided high-pressure hose for compressed air and industrial pneumatic use.",
+    "specs": [
+      [
+        "Brand",
+        "Duplon"
+      ],
+      [
+        "Type",
+        "PVC braided air hose"
+      ],
+      [
+        "Use",
+        "Compressed air"
+      ],
+      [
+        "Category",
+        "Duplon braided hose"
+      ],
+      [
+        "Sizes",
+        "5-75 mm I.D. listed"
+      ]
+    ],
+    "details": [
+      "Dutron presents Duplon as its braided hose brand for high-pressure applications.",
+      "Duplon uses synthetic-yarn braiding between two or more layers of soft PVC for pressure capacity and flexibility.",
+      "Dutron positions Duplon as a lightweight, economical replacement to conventional rubber hoses."
+    ],
+    "applications": [
+      "Compressed air",
+      "Pneumatic tools",
+      "Workshop and construction use"
+    ],
+    "source": "https://www.dutronindia.com/braided-hose/high-pressure-air-hose/"
+  },
+  {
+    "id": "construction-water",
+    "name": "Duplon Water / Garden / Construction Hose",
+    "category": "Duplon Braided Hose",
+    "image": "assets/dutron-construction-water-hose.jpg",
+    "tags": "duplon braided hose water garden construction irrigation yellow black",
+    "summary": "Duplon braided hose for water, garden and construction-site conveying applications.",
+    "specs": [
+      [
+        "Brand",
+        "Duplon"
+      ],
+      [
+        "Sizes",
+        "12-50 mm I.D."
+      ],
+      [
+        "Working pressure",
+        "5-10 kg/cm2"
+      ],
+      [
+        "Colour",
+        "Yellow-black"
+      ],
+      [
+        "Use",
+        "Water conveying"
+      ]
+    ],
+    "details": [
+      "Dutron lists Water/Garden/Construction Water Hose under its Duplon braided hose family.",
+      "The Duplon braided construction uses synthetic-yarn reinforcement inside soft PVC layers.",
+      "Useful for customers asking for garden, water and site hose."
+    ],
+    "applications": [
+      "Construction sites",
+      "Garden and water supply",
+      "Engineering sites"
+    ],
+    "source": "https://www.dutronindia.com/braided-hose/garden-water-hose-manufacturers/"
+  },
+  {
+    "id": "lay-flat",
+    "name": "Lay Flat Hose",
+    "category": "Flat Hose",
+    "image": "assets/flat-hose.jpg",
+    "tags": "flat hose lay flat agriculture construction discharge delivery irrigation mining marine",
+    "summary": "Lay-flat delivery hose for agriculture, construction, mines, quarries, marine transfer and liquid discharge.",
+    "specs": [
+      [
+        "Type",
+        "Lay-flat hose"
+      ],
+      [
+        "Use",
+        "Delivery/discharge"
+      ],
+      [
+        "Storage",
+        "Flat roll"
+      ],
+      [
+        "Availability",
+        "Confirm size and length"
+      ]
+    ],
+    "details": [
+      "Dutron’s flat hose range is designed for discharge and delivery where compact storage matters.",
+      "A practical listing for agriculture and construction water movement."
+    ],
+    "applications": [
+      "Irrigation",
+      "Construction discharge",
+      "Mines and quarries",
+      "Marine use"
+    ],
+    "source": "https://www.dutronindia.com/lay-flat-hose-manufacturer/"
+  },
+  {
+    "id": "pu-hose",
+    "name": "PU Hose",
+    "category": "PU Hose",
+    "image": "assets/PUHose.jpeg",
+    "tags": "pu hose duct flexible industrial ventilation dust",
+    "summary": "PU hose range for ducting and flexible industrial applications.",
+    "specs": [
+      [
+        "Type",
+        "PU hose"
+      ],
+      [
+        "Use",
+        "Flexible ducting/transfer"
+      ],
+      [
+        "Category",
+        "PU hose"
+      ],
+      [
+        "Availability",
+        "Confirm size and grade"
+      ]
+    ],
+    "details": [
+      "Dutron lists PU Hose as its own product family.",
+      "Use this listing for customers asking for duct, flexible PU or industrial hose needs."
+    ],
+    "applications": [
+      "Industrial ducting",
+      "Flexible transfer",
+      "Dust or air handling enquiries"
+    ],
+    "source": "https://www.dutronindia.com/pu-hose/"
+  },
+  {
+    "id": "duct-hose",
+    "name": "Duct Hose",
+    "category": "Duct Hose",
+    "image": "assets/DuctHose.png",
+    "tags": "duct hose industrial agriculture suction delivery air gases hvac fume dust cereals powder liquids flexible",
+    "summary": "Very light, extra-flexible duct hose for light-duty suction and delivery, air movement, HVAC, fume removal and light material handling.",
+    "specs": [
+      [
+        "Type",
+        "Duct hose"
+      ],
+      [
+        "Use",
+        "Light-duty suction and delivery"
+      ],
+      [
+        "Available sizes",
+        "16-300 mm I.D."
+      ],
+      [
+        "Also available",
+        "Duct Hose - Heavy with square type corrugated outer surface"
+      ]
+    ],
+    "details": [
       "Very light in weight.",
       "Extra flexible, hence easy to install.",
       "Rigid outer reinforcement, hence easy handling.",
       "Also available as Duct Hose - Heavy with square type corrugated outer surface."
     ],
-    applications: [
+    "applications": [
       "Light-duty suction and delivery",
       "Conveying air and gases",
       "Cold and warm air installation",
@@ -207,199 +415,116 @@ const products = [
       "Transporting wheat and other cereals",
       "Transporting powder, gases and liquids"
     ],
-    source: "https://www.dutronindia.com/"
+    "source": "https://www.dutronindia.com/"
   },
   {
-    id: "upvc-borewell",
-    name: "uPVC Borewell Casing Pipes",
-    category: "uPVC Pipes & Fittings",
-    image: "assets/dutron-upvc.png",
-    tags: "upvc borewell casing pipe groundwater tube well",
-    summary: "uPVC casing pipe systems for borewell and groundwater applications.",
-    specs: [["Type", "uPVC casing pipe"], ["Use", "Borewell casing"], ["Material", "uPVC"], ["Availability", "Confirm size and class"]],
-    details: ["Listed by Dutron under uPVC pipes and fittings.", "Use for borewell, tubewell and groundwater casing enquiries."],
-    applications: ["Borewell casing", "Tubewell projects", "Groundwater systems"],
-    source: "https://www.dutronindia.com/upvc-pipes-and-fittings/upvc-borewell-casing-pipes/"
+    "id": "swr",
+    "name": "SWR Pipes & Fittings",
+    "category": "uPVC Pipes & Fittings",
+    "image": "assets/SWR.png",
+    "tags": "swr pipe fittings soil waste rainwater drainage upvc",
+    "summary": "SWR pipe and fitting systems for soil, waste and rainwater drainage applications.",
+    "specs": [
+      [
+        "Type",
+        "SWR pipes and fittings"
+      ],
+      [
+        "Use",
+        "Soil/waste/rainwater"
+      ],
+      [
+        "Material",
+        "uPVC"
+      ],
+      [
+        "Availability",
+        "Confirm type A/B and sizes"
+      ]
+    ],
+    "details": [
+      "Dutron lists SWR pipes and fittings as part of its uPVC range.",
+      "Useful for residential and commercial drainage enquiries."
+    ],
+    "applications": [
+      "Soil lines",
+      "Waste lines",
+      "Rainwater drainage"
+    ],
+    "source": "https://www.dutronindia.com/upvc-pipes-and-fittings/swr-pipes-and-fittings-manufacturer/"
   },
   {
-    id: "upvc-fabricated",
-    name: "uPVC Fabricated Fittings",
-    category: "uPVC Pipes & Fittings",
-    image: "assets/dutron-upvc.png",
-    tags: "upvc fabricated fittings pipe fittings agriculture plumbing",
-    summary: "Fabricated uPVC fittings for pipe-system connections and project requirements.",
-    specs: [["Type", "Fabricated uPVC fittings"], ["Material", "uPVC"], ["Use", "Pipe connection systems"], ["Availability", "Confirm fitting type and size"]],
-    details: ["Dutron lists fabricated fittings under the uPVC range.", "Useful for customers needing bends, tees, reducers or project-specific fittings."],
-    applications: ["Pipe networks", "Agriculture lines", "Plumbing systems"],
-    source: "https://www.dutronindia.com/upvc-pipes-and-fittings/upvc-fabricated-fittings/"
+    "id": "hdpe-pipes",
+    "name": "HDPE Pipes and Fittings",
+    "category": "HDPE Pipes & Fittings",
+    "image": "assets/dutron-hdpe-pipes.jpg",
+    "tags": "hdpe mdpe pp pipes water supply irrigation duct industrial",
+    "summary": "Durable PE and PP pipe systems for agriculture, potable water supply, underground pipelines, ducts and industrial conveyance.",
+    "specs": [
+      [
+        "Sizes",
+        "20-710 mm listed"
+      ],
+      [
+        "Material",
+        "HDPE / MDPE / PP"
+      ],
+      [
+        "Use",
+        "Water, irrigation, ducts"
+      ],
+      [
+        "Application",
+        "Above or underground pipeline systems"
+      ]
+    ],
+    "details": [
+      "Dutron lists HDPE/MDPE/PP pipes for water supply, irrigation, ducts and industrial conveyance.",
+      "Ask customers for size, pressure class and roll/length requirement."
+    ],
+    "applications": [
+      "Potable water supply",
+      "Agriculture irrigation",
+      "Underground ducts",
+      "Industrial conveyance"
+    ],
+    "source": "https://www.dutronindia.com/hdpe-pipes-and-fittings/hdpe-pipe-manufacturers-in-gujarat/"
   },
   {
-    id: "upvc-plumbing",
-    name: "uPVC Plumbing System",
-    category: "uPVC Pipes & Fittings",
-    image: "assets/dutron-upvc.png",
-    tags: "upvc plumbing lead free residential commercial fittings water",
-    summary: "Lead-free uPVC plumbing pipes and fittings for residential and commercial water systems.",
-    specs: [["Pipe sizes", "Up to 150 mm O.D. listed"], ["Material", "uPVC"], ["Use", "Plumbing"], ["Fittings", "Ask for available fittings"]],
-    details: ["Dutron presents this as a plumbing system for building water supply applications.", "Suitable for customers asking for uPVC plumbing pipes and matching fittings."],
-    applications: ["Residential plumbing", "Commercial plumbing", "Cold water systems"],
-    source: "https://www.dutronindia.com/upvc-pipes-and-fittings/upvc-plumbing-system-in-gujarat/"
-  },
-  {
-    id: "upvc-agriculture",
-    name: "uPVC Agriculture Pipes & Fittings",
-    category: "uPVC Pipes & Fittings",
-    image: "assets/dutron-upvc.png",
-    tags: "upvc agriculture pipes fittings irrigation farm water",
-    summary: "uPVC agriculture pipes and fittings for farm irrigation and water distribution.",
-    specs: [["Type", "Agriculture pipe and fittings"], ["Material", "uPVC"], ["Use", "Irrigation/water distribution"], ["Availability", "Confirm class and size"]],
-    details: ["Listed under Dutron’s uPVC pipe and fitting portfolio.", "Good for farm irrigation and rural water-line enquiries."],
-    applications: ["Irrigation", "Farm water distribution", "Agriculture pipe networks"],
-    source: "https://www.dutronindia.com/upvc-pipes-and-fittings/upvc-agriculture-pipes-and-fittings/"
-  },
-  {
-    id: "submersible-column",
-    name: "Submersible Column Pipes",
-    category: "uPVC Pipes & Fittings",
-    image: "assets/dutron-upvc.png",
-    tags: "submersible column pipes upvc borewell pump",
-    summary: "uPVC submersible column pipes for borewell pump riser applications.",
-    specs: [["Type", "Submersible column pipe"], ["Use", "Borewell pump column"], ["Material", "uPVC"], ["Availability", "Confirm pump depth and size"]],
-    details: ["Dutron lists submersible column pipes within its uPVC product family.", "Customers should share borewell depth, pump HP and size requirement."],
-    applications: ["Submersible pumps", "Borewell systems", "Riser pipe applications"],
-    source: "https://www.dutronindia.com/upvc-pipes-and-fittings/submersible-column-pipes-2/"
-  },
-  {
-    id: "swr",
-    name: "SWR Pipes & Fittings",
-    category: "uPVC Pipes & Fittings",
-    image: "assets/dutron-upvc.png",
-    tags: "swr pipe fittings soil waste rainwater drainage upvc",
-    summary: "SWR pipe and fitting systems for soil, waste and rainwater drainage applications.",
-    specs: [["Type", "SWR pipes and fittings"], ["Use", "Soil/waste/rainwater"], ["Material", "uPVC"], ["Availability", "Confirm type A/B and sizes"]],
-    details: ["Dutron lists SWR pipes and fittings as part of its uPVC range.", "Useful for residential and commercial drainage enquiries."],
-    applications: ["Soil lines", "Waste lines", "Rainwater drainage"],
-    source: "https://www.dutronindia.com/upvc-pipes-and-fittings/swr-pipes-and-fittings-manufacturer/"
-  },
-  {
-    id: "underground-drainage",
-    name: "PVC Underground Drainage Pipes",
-    category: "uPVC Pipes & Fittings",
-    image: "assets/dutron-upvc.png",
-    tags: "pvc underground drainage pipes sewer drain civil",
-    summary: "PVC-U underground drainage pipes for below-ground drainage and civil works.",
-    specs: [["Type", "PVC underground drainage pipe"], ["Use", "Below-ground drainage"], ["Material", "PVC-U"], ["Availability", "Confirm diameter and stiffness/class"]],
-    details: ["Listed by Dutron for underground drainage applications.", "Good for project, site and drainage contractor enquiries."],
-    applications: ["Underground drainage", "Civil projects", "Sewer/drain lines"],
-    source: "https://www.dutronindia.com/upvc-pipes-and-fittings/pvc-underground-drainage-pipes/"
-  },
-  {
-    id: "hdpe-fittings",
-    name: "HDPE Pipe Fittings",
-    category: "HDPE Pipes & Fittings",
-    image: "assets/dutron-hdpe-category.png",
-    tags: "hdpe pipe fittings elbow tee reducer water irrigation",
-    summary: "HDPE pipe fittings for joining and completing HDPE pipeline systems.",
-    specs: [["Type", "HDPE fittings"], ["Use", "HDPE pipe systems"], ["Material", "HDPE"], ["Availability", "Confirm fitting type and size"]],
-    details: ["Dutron lists HDPE pipe fittings within the HDPE pipes and fittings category.", "Useful for pipe-system enquiries where fittings are needed with pipe supply."],
-    applications: ["Water supply", "Irrigation", "Industrial pipelines"],
-    source: "https://www.dutronindia.com/hdpe-pipes-and-fittings/hdpe-pipe-fittings-manufacturers/"
-  },
-  {
-    id: "hdpe-pipes",
-    name: "HDPE / MDPE / PP Pipes",
-    category: "HDPE Pipes & Fittings",
-    image: "assets/dutron-hdpe-pipes.jpg",
-    tags: "hdpe mdpe pp pipes water supply irrigation duct industrial",
-    summary: "Durable PE and PP pipe systems for agriculture, potable water supply, underground pipelines, ducts and industrial conveyance.",
-    specs: [["Sizes", "20-710 mm listed"], ["Material", "HDPE / MDPE / PP"], ["Use", "Water, irrigation, ducts"], ["Application", "Above or underground pipeline systems"]],
-    details: ["Dutron lists HDPE/MDPE/PP pipes for water supply, irrigation, ducts and industrial conveyance.", "Ask customers for size, pressure class and roll/length requirement."],
-    applications: ["Potable water supply", "Agriculture irrigation", "Underground ducts", "Industrial conveyance"],
-    source: "https://www.dutronindia.com/hdpe-pipes-and-fittings/hdpe-pipe-manufacturers-in-gujarat/"
-  },
-  {
-    id: "hdpe-sprinkler",
-    name: "HDPE Sprinkler Pipe Systems",
-    category: "HDPE Pipes & Fittings",
-    image: "assets/dutron-hdpe-category.png",
-    tags: "hdpe sprinkler pipe systems agriculture irrigation",
-    summary: "HDPE sprinkler pipe systems for agricultural irrigation.",
-    specs: [["Type", "HDPE sprinkler pipe system"], ["Use", "Sprinkler irrigation"], ["Material", "HDPE"], ["Availability", "Confirm pipe and accessory set"]],
-    details: ["Dutron lists sprinkler pipe systems under HDPE pipes and fittings.", "Good fit for farm irrigation enquiries requiring sprinkler layout support."],
-    applications: ["Sprinkler irrigation", "Agriculture", "Farm water distribution"],
-    source: "https://www.dutronindia.com/hdpe-pipes-and-fittings/hdpe-sprinkler-pipe-systems/"
-  },
-  {
-    id: "hdpe-woven-sacks",
-    name: "HDPE Woven Sacks",
-    category: "HDPE Pipes & Fittings",
-    image: "assets/dutron-hdpe-category.png",
-    tags: "hdpe woven sacks packaging bags",
-    summary: "HDPE woven sacks listed by Dutron under its HDPE product portfolio.",
-    specs: [["Type", "HDPE woven sacks"], ["Use", "Packaging"], ["Material", "HDPE woven fabric"], ["Availability", "Confirm size and bag type"]],
-    details: ["Dutron includes HDPE woven sacks in its HDPE product group.", "A separate enquiry category for packaging and sack requirements."],
-    applications: ["Packaging", "Industrial sacks", "Bulk goods handling"],
-    source: "https://www.dutronindia.com/hdpe-pipes-and-fittings/hdpe-woven-sacks-manufacturers/"
-  },
-  {
-    id: "hdpe-installation",
-    name: "HDPE Pipes Installation Service",
-    category: "HDPE Pipes & Fittings",
-    image: "assets/dutron-hdpe-category.png",
-    tags: "hdpe pipe installation service pipeline project",
-    summary: "HDPE pipe installation service listing for pipeline project support.",
-    specs: [["Type", "Installation service"], ["Use", "HDPE pipeline projects"], ["Scope", "Confirm project requirement"], ["Availability", "Service enquiry"]],
-    details: ["Dutron lists HDPE pipes installation service in the HDPE category.", "Use this card for project customers who need pipeline execution support, not only material supply."],
-    applications: ["Pipeline installation", "Water projects", "Industrial or civil HDPE lines"],
-    source: "https://www.dutronindia.com/hdpe-pipes-and-fittings/hdpe-pipes-installation-service/"
-  },
-  {
-    id: "cpvc",
-    name: "CPVC Pipes & Fittings",
-    category: "CPVC Pipes & Fittings",
-    image: "assets/dutron-cpvc-pipes.jpg",
-    tags: "cpvc plumbing hot cold water fittings residential commercial",
-    summary: "Hot and cold potable water plumbing system for residential buildings, commercial complexes and institutes.",
-    specs: [["Pipe sizes", "15-150 mm I.D."], ["Pressure", "SDR 11 / SDR 13.5"], ["Temperature", "Up to 93C"], ["Use", "Hot and cold water plumbing"]],
-    details: ["Dutron CPVC is positioned for hot and cold water plumbing applications.", "Useful for building contractors, plumbers and project buyers."],
-    applications: ["Hot water plumbing", "Cold water plumbing", "Residential and commercial projects"],
-    source: "https://www.dutronindia.com/pipes/cpvc-pipes-and-fittings-india/"
-  },
-  {
-    id: "dwc",
-    name: "Double Wall Corrugated Pipes",
-    category: "Corrugated Pipes",
-    image: "assets/dutron-corrugated.png",
-    tags: "double wall corrugated pipe drainage cable duct civil",
-    summary: "Double-wall corrugated pipe option for drainage, protection and civil infrastructure enquiries.",
-    specs: [["Type", "Double-wall corrugated pipe"], ["Use", "Drainage/protection"], ["Category", "Corrugated pipes"], ["Availability", "Confirm size and class"]],
-    details: ["Dutron lists double-wall corrugated pipes under its corrugated pipe portfolio.", "Useful for infrastructure, drainage and cable-protection customers."],
-    applications: ["Drainage", "Cable protection", "Civil projects"],
-    source: "https://www.dutronindia.com/corrugated-pipes/double-wall-corrugated-pipes/"
-  },
-  {
-    id: "corrugated-electrical",
-    name: "Corrugated Pipes for Electrical Wiring",
-    category: "Corrugated Pipes",
-    image: "assets/dutron-corrugated.png",
-    tags: "corrugated pipes electrical wiring conduit cable protection",
-    summary: "Corrugated pipe range for electrical wiring and cable-protection applications.",
-    specs: [["Type", "Electrical corrugated pipe"], ["Use", "Wiring/cable protection"], ["Category", "Corrugated pipes"], ["Availability", "Confirm diameter and coil length"]],
-    details: ["Dutron lists a corrugated pipe product specifically for electrical wiring.", "Use this for conduit, wiring and cable-protection enquiries."],
-    applications: ["Electrical wiring", "Cable conduit", "Building and infrastructure projects"],
-    source: "https://www.dutronindia.com/corrugated-pipes/corrugated-pipes-for-electrical-wiring/"
-  },
-  {
-    id: "multipurpose-corrugated",
-    name: "Multipurpose Corrugated Pipes",
-    category: "Corrugated Pipes",
-    image: "assets/dutron-corrugated.png",
-    tags: "multipurpose corrugated pipes drainage cable protection industrial",
-    summary: "Multipurpose corrugated pipe for drainage, cable protection and general flexible conduit needs.",
-    specs: [["Type", "Multipurpose corrugated pipe"], ["Use", "Drainage/conduit/protection"], ["Category", "Corrugated pipes"], ["Availability", "Confirm size and application"]],
-    details: ["Dutron lists multipurpose corrugated pipes as a separate corrugated-pipe product.", "A broad enquiry match when customers need flexible corrugated pipe but are unsure of the exact grade."],
-    applications: ["Drainage", "Cable protection", "General conduit use"],
-    source: "https://www.dutronindia.com/corrugated-pipes/multipurpose-corrugated-pipes-in-india/"
+    "id": "cpvc",
+    "name": "CPVC Pipes & Fittings",
+    "category": "CPVC Pipes & Fittings",
+    "image": "assets/CPVC-Pipes-and-Fittings.jpg",
+    "tags": "cpvc plumbing hot cold water fittings residential commercial",
+    "summary": "Hot and cold potable water plumbing system for residential buildings, commercial complexes and institutes.",
+    "specs": [
+      [
+        "Pipe sizes",
+        "15-150 mm I.D."
+      ],
+      [
+        "Pressure",
+        "SDR 11 / SDR 13.5"
+      ],
+      [
+        "Temperature",
+        "Up to 93C"
+      ],
+      [
+        "Use",
+        "Hot and cold water plumbing"
+      ]
+    ],
+    "details": [
+      "Dutron CPVC is positioned for hot and cold water plumbing applications.",
+      "Useful for building contractors, plumbers and project buyers."
+    ],
+    "applications": [
+      "Hot water plumbing",
+      "Cold water plumbing",
+      "Residential and commercial projects"
+    ],
+    "source": "https://www.dutronindia.com/pipes/cpvc-pipes-and-fittings-india/"
   }
 ];
 
@@ -1889,122 +2014,6 @@ const productSpecificationTables = {
           "0.355",
           "183",
           "15"
-        ]
-      ]
-    }
-  ],
-  "upvc-borewell": [
-    {
-      "title": "Specification Table",
-      "rows": [
-        [
-          "Nominal Diameter (DN)",
-          "Mean outer Diameter (d) of pipe (mm)",
-          "Wall Thickness (mm)"
-        ],
-        [
-          "Type - CM",
-          "Type - CS"
-        ],
-        [
-          "Inch",
-          "mm",
-          "Min",
-          "Max",
-          "Min",
-          "Max",
-          "Min",
-          "Max"
-        ],
-        [
-          "1½",
-          "40",
-          "48.00",
-          "48.20",
-          "3.50",
-          "4.00",
-          "-",
-          "-"
-        ],
-        [
-          "2",
-          "50",
-          "60.00",
-          "60.20",
-          "4.00",
-          "4.60",
-          "-",
-          "-"
-        ],
-        [
-          "3",
-          "80",
-          "88.00",
-          "88.30",
-          "4.00",
-          "4.60",
-          "-",
-          "-"
-        ],
-        [
-          "4",
-          "100",
-          "113.00",
-          "113.30",
-          "5.00",
-          "5.70",
-          "4.00",
-          "4.40"
-        ],
-        [
-          "5",
-          "125",
-          "140.00",
-          "140.40",
-          "6.50",
-          "7.30",
-          "4.90",
-          "5.40"
-        ],
-        [
-          "6",
-          "150",
-          "165.00",
-          "165.40",
-          "7.50",
-          "8.50",
-          "5.70",
-          "6.50"
-        ],
-        [
-          "7",
-          "175",
-          "200.00",
-          "200.50",
-          "8.80",
-          "9.80",
-          "7.00",
-          "7.80"
-        ],
-        [
-          "8",
-          "200",
-          "225.00",
-          "225.50",
-          "10.00",
-          "11.20",
-          "7.60",
-          "8.80"
-        ],
-        [
-          "10",
-          "250",
-          "280.00",
-          "280.50",
-          "12.50",
-          "14.00",
-          "9.60",
-          "11.00"
         ]
       ]
     }
@@ -6658,7 +6667,6 @@ function openProductDetail(product) {
     ${table}
     <div class="detail-actions">
       <button type="button" class="button primary quote-link" data-product="${product.name}">Request quote for this product</button>
-      <a class="button secondary" href="${product.source}" target="_blank" rel="noopener">View Dutron source</a>
     </div>
     <p class="source-note">Product information summarized from Dutron India catalog pages. Confirm stock, grade, pressure class and application fit before ordering.</p>
   `;
