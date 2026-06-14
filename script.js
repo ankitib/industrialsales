@@ -6554,6 +6554,7 @@ const formStatus = document.querySelector("#formStatus");
 const showcaseGrid = document.querySelector(".showcase-grid");
 const modal = document.querySelector("#productModal");
 const modalContent = document.querySelector("#modalContent");
+const backToTopControl = document.querySelector("[data-scroll-top]");
 
 let activeFilter = "all";
 
@@ -6680,6 +6681,13 @@ function requestQuote(productName) {
   productNeed.focus({ preventScroll: true });
 }
 
+function scrollToPageTop() {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  history.replaceState(null, "", window.location.pathname + window.location.search);
+}
+
 searchInput.addEventListener("input", updateProducts);
 
 filterButtons.forEach((button) => {
@@ -6691,6 +6699,13 @@ filterButtons.forEach((button) => {
 });
 
 document.addEventListener("click", (event) => {
+  const backToTopLink = event.target.closest("[data-scroll-top]");
+  if (backToTopLink) {
+    event.preventDefault();
+    scrollToPageTop();
+    return;
+  }
+
   const quoteButton = event.target.closest(".quote-link");
   if (quoteButton) {
     event.stopPropagation();
@@ -6726,5 +6741,7 @@ quoteForm.addEventListener("submit", (event) => {
   formStatus.textContent = "Opening WhatsApp with your quote request.";
   window.location.href = `https://wa.me/${shopPhone}?text=${encodeURIComponent(message)}`;
 });
+
+backToTopControl?.addEventListener("click", scrollToPageTop);
 
 renderCatalog();

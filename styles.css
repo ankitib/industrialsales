@@ -65,6 +65,7 @@ textarea {
   top: 0;
   z-index: 20;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
   justify-content: space-between;
@@ -78,6 +79,11 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  flex: 1 1 min(100%, 280px);
+  min-width: 0;
+}
+
+.brand > span:last-child {
   min-width: 0;
 }
 
@@ -97,6 +103,8 @@ textarea {
 .brand strong,
 .brand small {
   display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -112,11 +120,34 @@ textarea {
 }
 
 .top-nav {
+  order: 3;
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  overflow-x: auto;
+  padding-top: 2px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  scrollbar-width: none;
+}
+
+.top-nav::-webkit-scrollbar {
   display: none;
+}
+
+.top-nav a {
+  flex: 0 0 auto;
+  padding: 8px 10px;
+  border-radius: 7px;
+  background: rgba(0, 143, 79, 0.08);
+  color: var(--green-dark);
 }
 
 .header-call {
   display: grid;
+  flex: 0 0 42px;
+  margin-left: auto;
   width: 42px;
   height: 42px;
   place-items: center;
@@ -893,13 +924,26 @@ address a {
   display: grid;
   gap: 12px;
   padding-top: 28px;
-  padding-bottom: 92px;
+  padding-bottom: 154px;
   border-top: 1px solid var(--line);
 }
 
-.site-footer a {
+.site-footer a,
+.site-footer button {
   color: var(--green-dark);
   font-weight: 800;
+}
+
+.back-to-top {
+  justify-self: start;
+  min-height: 44px;
+  margin-bottom: 8px;
+  scroll-margin-bottom: 180px;
+  border: 1px solid rgba(0, 143, 79, 0.18);
+  border-radius: 7px;
+  padding: 10px 14px;
+  background: rgba(0, 143, 79, 0.08);
+  cursor: pointer;
 }
 
 .mobile-action-bar {
@@ -945,16 +989,36 @@ address a {
 }
 
 @media (min-width: 850px) {
+  .site-header {
+    flex-wrap: nowrap;
+  }
+
+  .brand {
+    flex: 0 1 auto;
+  }
+
   .top-nav {
+    order: 0;
     display: flex;
     align-items: center;
     gap: 18px;
+    width: auto;
+    overflow: visible;
+    padding-top: 0;
     color: var(--muted);
     font-size: 14px;
     font-weight: 750;
   }
 
+  .top-nav a {
+    padding: 0;
+    background: transparent;
+    color: inherit;
+  }
+
   .header-call {
+    flex-basis: auto;
+    margin-left: 0;
     width: auto;
     padding: 0 15px;
   }
