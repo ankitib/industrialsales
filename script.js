@@ -1,4 +1,5 @@
 const shopPhone = "919336121245";
+const shopEmail = "industrialsalesco@gmail.com";
 
 const products = [
   {
@@ -146,42 +147,6 @@ const products = [
     "source": "https://www.dutronindia.com/suction-hose/heavy-duty-suction-hose/"
   },
   {
-    "id": "non-toxic-pvc",
-    "name": "Non Toxic Steel Wire Food Grade Hose",
-    "category": "Suction Hose",
-    "image": "assets/SteelWireNonToxic.png",
-    "tags": "suction hose non toxic pvc food water transfer",
-    "summary": "Non-toxic PVC hose for applications where regular industrial hose is not suitable.",
-    "specs": [
-      [
-        "Type",
-        "Non-toxic PVC hose"
-      ],
-      [
-        "Use",
-        "Non-toxic transfer"
-      ],
-      [
-        "Material",
-        "PVC"
-      ],
-      [
-        "Availability",
-        "Confirm grade and size"
-      ]
-    ],
-    "details": [
-      "Listed by Dutron under suction hose products.",
-      "Ask for suitability before use with any potable, food or sensitive transfer application."
-    ],
-    "applications": [
-      "Non-toxic transfer",
-      "Water movement",
-      "Light-duty suction and delivery"
-    ],
-    "source": "https://www.dutronindia.com/suction-hose/non-toxic-pvc-hose/"
-  },
-  {
     "id": "oil-suction",
     "name": "Oil Suction Hose",
     "category": "Suction Hose",
@@ -216,6 +181,51 @@ const products = [
       "Suction and delivery"
     ],
     "source": "https://www.dutronindia.com/suction-hose/oil-suction-and-discharge-hose/"
+  },
+  {
+    "id": "duct-hose",
+    "name": "Duct Hose",
+    "category": "Duct Hose",
+    "image": "assets/DuctHose.png",
+    "tags": "duct hose industrial agriculture suction delivery air gases hvac fume dust cereals powder liquids flexible",
+    "summary": "Very light, extra-flexible duct hose for light-duty suction and delivery, air movement, HVAC, fume removal and light material handling.",
+    "specs": [
+      [
+        "Type",
+        "Duct hose"
+      ],
+      [
+        "Use",
+        "Light-duty suction and delivery"
+      ],
+      [
+        "Available sizes",
+        "16-300 mm I.D."
+      ],
+      [
+        "Also available",
+        "Duct Hose - Heavy with square type corrugated outer surface"
+      ]
+    ],
+    "details": [
+      "Very light in weight.",
+      "Extra flexible, hence easy to install.",
+      "Rigid outer reinforcement, hence easy handling.",
+      "Also available as Duct Hose - Heavy with square type corrugated outer surface."
+    ],
+    "applications": [
+      "Light-duty suction and delivery",
+      "Conveying air and gases",
+      "Cold and warm air installation",
+      "Cooling of motors",
+      "Heating, ventilating and air conditioning systems",
+      "Fume removal",
+      "Handling dust and light materials",
+      "Vacuum cleaning equipment",
+      "Transporting wheat and other cereals",
+      "Transporting powder, gases and liquids"
+    ],
+    "source": "https://www.dutronindia.com/"
   },
   {
     "id": "high-pressure-air",
@@ -337,6 +347,42 @@ const products = [
     "source": "https://www.dutronindia.com/lay-flat-hose-manufacturer/"
   },
   {
+    "id": "non-toxic-pvc",
+    "name": "Non Toxic Steel Wire Food Grade Hose",
+    "category": "Suction Hose",
+    "image": "assets/SteelWireNonToxic.png",
+    "tags": "suction hose non toxic pvc food water transfer",
+    "summary": "Non-toxic PVC hose for applications where regular industrial hose is not suitable.",
+    "specs": [
+      [
+        "Type",
+        "Non-toxic PVC hose"
+      ],
+      [
+        "Use",
+        "Non-toxic transfer"
+      ],
+      [
+        "Material",
+        "PVC"
+      ],
+      [
+        "Availability",
+        "Confirm grade and size"
+      ]
+    ],
+    "details": [
+      "Listed by Dutron under suction hose products.",
+      "Ask for suitability before use with any potable, food or sensitive transfer application."
+    ],
+    "applications": [
+      "Non-toxic transfer",
+      "Water movement",
+      "Light-duty suction and delivery"
+    ],
+    "source": "https://www.dutronindia.com/suction-hose/non-toxic-pvc-hose/"
+  },
+  {
     "id": "pu-hose",
     "name": "PU Hose",
     "category": "PU Hose",
@@ -371,87 +417,6 @@ const products = [
       "Dust or air handling enquiries"
     ],
     "source": "https://www.dutronindia.com/pu-hose/"
-  },
-  {
-    "id": "duct-hose",
-    "name": "Duct Hose",
-    "category": "Duct Hose",
-    "image": "assets/DuctHose.png",
-    "tags": "duct hose industrial agriculture suction delivery air gases hvac fume dust cereals powder liquids flexible",
-    "summary": "Very light, extra-flexible duct hose for light-duty suction and delivery, air movement, HVAC, fume removal and light material handling.",
-    "specs": [
-      [
-        "Type",
-        "Duct hose"
-      ],
-      [
-        "Use",
-        "Light-duty suction and delivery"
-      ],
-      [
-        "Available sizes",
-        "16-300 mm I.D."
-      ],
-      [
-        "Also available",
-        "Duct Hose - Heavy with square type corrugated outer surface"
-      ]
-    ],
-    "details": [
-      "Very light in weight.",
-      "Extra flexible, hence easy to install.",
-      "Rigid outer reinforcement, hence easy handling.",
-      "Also available as Duct Hose - Heavy with square type corrugated outer surface."
-    ],
-    "applications": [
-      "Light-duty suction and delivery",
-      "Conveying air and gases",
-      "Cold and warm air installation",
-      "Cooling of motors",
-      "Heating, ventilating and air conditioning systems",
-      "Fume removal",
-      "Handling dust and light materials",
-      "Vacuum cleaning equipment",
-      "Transporting wheat and other cereals",
-      "Transporting powder, gases and liquids"
-    ],
-    "source": "https://www.dutronindia.com/"
-  },
-  {
-    "id": "swr",
-    "name": "SWR Pipes & Fittings",
-    "category": "uPVC Pipes & Fittings",
-    "image": "assets/SWR.png",
-    "tags": "swr pipe fittings soil waste rainwater drainage upvc",
-    "summary": "SWR pipe and fitting systems for soil, waste and rainwater drainage applications.",
-    "specs": [
-      [
-        "Type",
-        "SWR pipes and fittings"
-      ],
-      [
-        "Use",
-        "Soil/waste/rainwater"
-      ],
-      [
-        "Material",
-        "uPVC"
-      ],
-      [
-        "Availability",
-        "Confirm type A/B and sizes"
-      ]
-    ],
-    "details": [
-      "Dutron lists SWR pipes and fittings as part of its uPVC range.",
-      "Useful for residential and commercial drainage enquiries."
-    ],
-    "applications": [
-      "Soil lines",
-      "Waste lines",
-      "Rainwater drainage"
-    ],
-    "source": "https://www.dutronindia.com/upvc-pipes-and-fittings/swr-pipes-and-fittings-manufacturer/"
   },
   {
     "id": "hdpe-pipes",
@@ -525,6 +490,42 @@ const products = [
       "Residential and commercial projects"
     ],
     "source": "https://www.dutronindia.com/pipes/cpvc-pipes-and-fittings-india/"
+  },
+  {
+    "id": "swr",
+    "name": "SWR Pipes & Fittings",
+    "category": "uPVC Pipes & Fittings",
+    "image": "assets/SWR.png",
+    "tags": "swr pipe fittings soil waste rainwater drainage upvc",
+    "summary": "SWR pipe and fitting systems for soil, waste and rainwater drainage applications.",
+    "specs": [
+      [
+        "Type",
+        "SWR pipes and fittings"
+      ],
+      [
+        "Use",
+        "Soil/waste/rainwater"
+      ],
+      [
+        "Material",
+        "uPVC"
+      ],
+      [
+        "Availability",
+        "Confirm type A/B and sizes"
+      ]
+    ],
+    "details": [
+      "Dutron lists SWR pipes and fittings as part of its uPVC range.",
+      "Useful for residential and commercial drainage enquiries."
+    ],
+    "applications": [
+      "Soil lines",
+      "Waste lines",
+      "Rainwater drainage"
+    ],
+    "source": "https://www.dutronindia.com/upvc-pipes-and-fittings/swr-pipes-and-fittings-manufacturer/"
   }
 ];
 
@@ -6737,6 +6738,13 @@ quoteForm.addEventListener("submit", (event) => {
   const phone = data.get("phone") || "";
   const need = data.get("need") || "Dutron products";
   const message = `Quote request from ${name}\nPhone: ${phone}\nNeed: ${need}`;
+  const action = event.submitter?.dataset.action || "whatsapp";
+
+  if (action === "email") {
+    formStatus.textContent = "Opening email with your quote request.";
+    window.location.href = `mailto:${shopEmail}?subject=${encodeURIComponent("Quote request for Dutron products")}&body=${encodeURIComponent(message)}`;
+    return;
+  }
 
   formStatus.textContent = "Opening WhatsApp with your quote request.";
   window.location.href = `https://wa.me/${shopPhone}?text=${encodeURIComponent(message)}`;
