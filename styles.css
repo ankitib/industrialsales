@@ -144,6 +144,32 @@ textarea {
   color: var(--green-dark);
 }
 
+.language-toggle {
+  order: 2;
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid rgba(0, 143, 79, 0.26);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.language-option {
+  min-height: 38px;
+  border: 0;
+  padding: 7px 10px;
+  background: transparent;
+  color: var(--green-dark);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.language-option.active {
+  background: var(--steel);
+  color: white;
+}
+
 .header-call {
   display: grid;
   flex: 0 0 42px;
@@ -822,7 +848,7 @@ th {
   background: #f7faf9;
   color: var(--steel);
   font-size: 12px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .source-note,
@@ -1166,6 +1192,11 @@ address a {
     color: inherit;
   }
 
+  .language-toggle {
+    order: 0;
+    flex: 0 0 auto;
+  }
+
   .header-call {
     flex-basis: auto;
     margin-left: 0;
@@ -1174,7 +1205,7 @@ address a {
   }
 
   .header-call::after {
-    content: "Call";
+    content: attr(data-call-label);
     margin-left: 8px;
     font-weight: 800;
   }

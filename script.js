@@ -6547,6 +6547,443 @@ const productSpecificationTables = {
   ]
 };
 
+const languageCopy = {
+  en: {
+    "meta.title": "Industrial Sales Corporation | Dutron Pipes & Hoses Distributor",
+    "brand.name": "Industrial Sales Corporation, Kanpur",
+    "brand.homeLabel": "Industrial Sales Corporation home",
+    "language.label": "Language selector",
+    "header.callLabel": "Call Industrial Sales Corporation",
+    "nav.products": "Products",
+    "nav.gallery": "Gallery",
+    "nav.brochures": "Brochures",
+    "nav.contact": "Contact",
+    "hero.title": "Flexible Pipes from the House of Dutron",
+    "hero.copy": "Industrial Sales Corporation, Kanpur is your one stop destination in Uttar Pradesh to source Flexible Pvc pipes for Agriculture, Plumbing, Industrial and Water Management needs.",
+    "cta.callNow": "Call Now",
+    "cta.call": "Call",
+    "cta.email": "Email",
+    "cta.whatsapp": "WhatsApp",
+    "cta.whatsappQuote": "WhatsApp Quote",
+    "facts.range.label": "Range",
+    "facts.range.value": "Hoses, pipes and fittings",
+    "facts.support.label": "Support",
+    "facts.support.value": "Size and Applicative guidance",
+    "facts.customers.label": "Customers",
+    "facts.customers.value": "Farm, Plumbing & Industries",
+    "facts.usp.label": "USP",
+    "facts.usp.value": "Stock Availability and Economic Pricing",
+    "trust.character.title": "Character",
+    "trust.character.copy": "Genuine Pricing",
+    "trust.consistency.title": "Consistency",
+    "trust.consistency.copy": "Continuous stock availability",
+    "trust.credibility.title": "Credibility",
+    "trust.credibility.copy": "Always ready to help. Serving Farmers & Industries in Uttar Pradesh since last 4 decades.",
+    "products.title": "Product Range",
+    "products.copy": "Browse the complete range of products from the house of DUTRON PLASTICS, Ahmedabad. Tap any product to view details, applications and specifications.",
+    "products.search": "Search products, uses or material",
+    "filters.all": "All",
+    "filters.agriculture": "Agriculture",
+    "filters.plumbing": "Plumbing",
+    "filters.industrial": "Industrial",
+    "brochures.title": "Brochures",
+    "brochures.copy": "Download Product brochures for the different products.",
+    "brochures.kanaflex": "Dutron Kanaflex (Flexible Pipes)",
+    "brochures.plumbing": "Dutron Plumbing (Pipes & Fittings)",
+    "brochureLinks.kanaflex": "Dutron Kanaflex",
+    "brochureLinks.braided": "Duplon braided",
+    "brochureLinks.construction": "Duplon Construction hose",
+    "brochureLinks.flat": "Duplon Flat hose",
+    "brochureLinks.pu": "Duplon PU hose",
+    "brochureLinks.steelWire": "Steel wire hose",
+    "brochureLinks.plumbing": "Dutron Plumbing Brochure",
+    "brochureLinks.cpvc": "CPVC Pipes",
+    "brochureLinks.swr": "SWR Pipes",
+    "brochureLinks.hdpe": "HDPE Pipes",
+    "brochureLinks.rigidPvc": "Rigid Pvc Agriculture pipes",
+    "brochureLinks.rigidPvcFittings": "Rigid Pvc Agriculture Fittings",
+    "brochureLinks.upvcColumn": "UPVC Column",
+    "brochureLinks.underground": "Underground drainage",
+    "brochureLinks.sprinkler": "Sprinkler",
+    "contact.title": "Get in Touch",
+    "contact.copy": "Send product name, required size, length or quantity, and application. We will respond with availability and pricing.",
+    "contact.addressLabel": "Address:",
+    "contact.phoneLabel": "Ph:",
+    "contact.emailLabel": "Email:-",
+    "contact.maps": "Google Maps Link",
+    "form.name": "Name",
+    "form.phone": "Phone",
+    "form.need": "Product Need",
+    "form.needPlaceholder": "Example: 2 inch M.D. Green suction hose, 50 meters",
+    "footer.copy": "Industrial Sales Corporation is an independent regional distributor/trader. Dutron product category and specification references are sourced from Dutron India for customer guidance.",
+    "footer.backToTop": "Back to top",
+    "card.viewDetails": "View details",
+    "card.requestQuote": "Request quote",
+    "card.empty": "No matching products. Try another search or clear the filter.",
+    "modal.specifications": "Specifications",
+    "modal.details": "Details",
+    "modal.applications": "Applications",
+    "modal.requestQuote": "Request quote for this product",
+    "modal.sourceNote": "Product information summarized from Dutron India catalog pages. Confirm stock, grade, pressure class and application fit before ordering.",
+    "quote.prefill": "Please quote for {product}. Size/quantity: ",
+    "quote.emailStatus": "Opening email with your quote request.",
+    "quote.whatsappStatus": "Opening WhatsApp with your quote request.",
+    "quote.customer": "ग्राहक",
+    "quote.defaultNeed": "Dutron उत्पाद",
+    "quote.message": "Quote request from {name}\nPhone: {phone}\nNeed: {need}",
+    "quote.subject": "Quote request for Dutron products"
+  },
+  hi: {
+    "meta.title": "इंडस्ट्रियल सेल्स कॉर्पोरेशन | Dutron पाइप्स और होज़ वितरक",
+    "brand.name": "इंडस्ट्रियल सेल्स कॉर्पोरेशन, कानपुर",
+    "brand.homeLabel": "इंडस्ट्रियल सेल्स कॉर्पोरेशन होम",
+    "language.label": "भाषा चुनें",
+    "header.callLabel": "इंडस्ट्रियल सेल्स कॉर्पोरेशन को कॉल करें",
+    "nav.products": "उत्पाद",
+    "nav.gallery": "गैलरी",
+    "nav.brochures": "ब्रॉशर",
+    "nav.contact": "संपर्क",
+    "hero.title": "Dutron के भरोसेमंद लचीले पाइप",
+    "hero.copy": "इंडस्ट्रियल सेल्स कॉर्पोरेशन, कानपुर उत्तर प्रदेश में खेती, प्लंबिंग, औद्योगिक और जल प्रबंधन जरूरतों के लिए Flexible PVC पाइप पाने का आपका भरोसेमंद स्थान है।",
+    "cta.callNow": "अभी कॉल करें",
+    "cta.call": "कॉल",
+    "cta.email": "ईमेल",
+    "cta.whatsapp": "WhatsApp",
+    "cta.whatsappQuote": "WhatsApp कोट",
+    "facts.range.label": "रेंज",
+    "facts.range.value": "होज़, पाइप और फिटिंग्स की पूरी रेंज",
+    "facts.support.label": "सहायता",
+    "facts.support.value": "साइज़ और उपयोग की सही सलाह",
+    "facts.customers.label": "ग्राहक",
+    "facts.customers.value": "खेती, प्लंबिंग और उद्योग",
+    "facts.usp.label": "USP",
+    "facts.usp.value": "स्टॉक उपलब्धता और किफायती कीमत",
+    "trust.character.title": "चरित्र",
+    "trust.character.copy": "वास्तविक और साफ कीमत",
+    "trust.consistency.title": "निरंतरता",
+    "trust.consistency.copy": "लगातार स्टॉक उपलब्धता",
+    "trust.credibility.title": "विश्वसनीयता",
+    "trust.credibility.copy": "मदद के लिए हमेशा तैयार। पिछले 4 दशकों से उत्तर प्रदेश के किसानों और उद्योगों की सेवा।",
+    "products.title": "उत्पाद रेंज",
+    "products.copy": "DUTRON PLASTICS, Ahmedabad के उत्पादों की पूरी रेंज देखें। जानकारी, उपयोग और विशेषताएं देखने के लिए किसी भी उत्पाद पर टैप करें।",
+    "products.search": "उत्पाद, उपयोग या सामग्री खोजें",
+    "filters.all": "सभी",
+    "filters.agriculture": "खेती",
+    "filters.plumbing": "प्लंबिंग",
+    "filters.industrial": "औद्योगिक",
+    "brochures.title": "ब्रॉशर",
+    "brochures.copy": "अलग-अलग उत्पादों के brochures डाउनलोड करें।",
+    "brochures.kanaflex": "Dutron Kanaflex (Flexible Pipes)",
+    "brochures.plumbing": "Dutron Plumbing (Pipes & Fittings)",
+    "brochureLinks.kanaflex": "Dutron Kanaflex",
+    "brochureLinks.braided": "Duplon ब्रेडेड होज़",
+    "brochureLinks.construction": "Duplon कंस्ट्रक्शन होज़",
+    "brochureLinks.flat": "Duplon flat होज़",
+    "brochureLinks.pu": "Duplon PU होज़",
+    "brochureLinks.steelWire": "Steel wire होज़",
+    "brochureLinks.plumbing": "Dutron प्लंबिंग ब्रॉशर",
+    "brochureLinks.cpvc": "CPVC पाइप",
+    "brochureLinks.swr": "SWR पाइप",
+    "brochureLinks.hdpe": "HDPE पाइप",
+    "brochureLinks.rigidPvc": "Rigid PVC agriculture पाइप",
+    "brochureLinks.rigidPvcFittings": "Rigid PVC agriculture fittings",
+    "brochureLinks.upvcColumn": "UPVC column",
+    "brochureLinks.underground": "भूमिगत drainage",
+    "brochureLinks.sprinkler": "Sprinkler",
+    "contact.title": "संपर्क करें",
+    "contact.copy": "उत्पाद का नाम, जरूरी साइज़, लंबाई या मात्रा, और उपयोग भेजें। हम उपलब्धता और कीमत के साथ जवाब देंगे।",
+    "contact.addressLabel": "पता:",
+    "contact.phoneLabel": "फोन:",
+    "contact.emailLabel": "ईमेल:",
+    "contact.maps": "Google Maps लिंक",
+    "form.name": "नाम",
+    "form.phone": "फोन",
+    "form.need": "उत्पाद की जरूरत",
+    "form.needPlaceholder": "उदाहरण: 2 inch M.D. Green suction hose, 50 meters",
+    "footer.copy": "इंडस्ट्रियल सेल्स कॉर्पोरेशन एक स्वतंत्र regional distributor/trader है। Dutron product category और specification references ग्राहक मार्गदर्शन के लिए Dutron India से लिए गए हैं।",
+    "footer.backToTop": "ऊपर जाएं",
+    "card.viewDetails": "जानकारी देखें",
+    "card.requestQuote": "भाव पूछें",
+    "card.empty": "कोई matching उत्पाद नहीं मिला। दूसरी search करें या filter हटाएं।",
+    "modal.specifications": "विशेषताएं",
+    "modal.details": "जानकारी",
+    "modal.applications": "उपयोग",
+    "modal.requestQuote": "इस उत्पाद का भाव पूछें",
+    "modal.sourceNote": "Product information Dutron India catalog pages से संक्षेप में ली गई है। Order करने से पहले stock, grade, pressure class और उपयोग की suitability confirm करें।",
+    "quote.prefill": "{product} के लिए भाव बताएं। Size/quantity: ",
+    "quote.emailStatus": "आपकी भाव request के साथ email खुल रहा है।",
+    "quote.whatsappStatus": "आपकी भाव request के साथ WhatsApp खुल रहा है।",
+    "quote.customer": "Customer",
+    "quote.defaultNeed": "Dutron products",
+    "quote.message": "{name} से भाव request\nPhone: {phone}\nNeed: {need}",
+    "quote.subject": "Dutron उत्पादों के लिए भाव request"
+  }
+};
+
+const productTranslations = {
+  "md-green": {
+    name: "M.D. Green Suction & Delivery Hose",
+    category: "Suction होज़",
+    summary: "सिंचाई के पानी, खारे पानी, हल्के acids और alkalies के लिए medium-duty PVC suction और delivery होज़, solvents को छोड़कर।",
+    details: [
+      "मजबूती और लचीलापन देने के लिए rigid PVC के hard spirals soft PVC wall में लगाए जाते हैं।",
+      "Dutron के अनुसार यह रबर होज़ से हल्का और ज्यादा लचीला है।",
+      "कठिन कामकाजी स्थितियों में kinking, bulging और bursting को रोकने के लिए बनाया गया है।"
+    ],
+    applications: ["खेती की सिंचाई", "Water suction और delivery", "खारा पानी", "हल्के acids और alkalies"]
+  },
+  "heavy-duty-suction": {
+    name: "Heavy Duty Suction Hose",
+    category: "Suction होज़",
+    summary: "कठिन water और material suction कामों के लिए heavy-duty suction होज़ विकल्प।",
+    details: [
+      "Dutron इसे suction hose product family में रखता है।",
+      "Site या farm work के लिए मजबूत suction होज़ चाहिए तो यह उपयोगी विकल्प है।"
+    ],
+    applications: ["खेती", "औद्योगिक sites", "Water suction"]
+  },
+  "oil-suction": {
+    name: "Oil Suction Hose",
+    category: "Suction होज़",
+    summary: "Petroleum या oil-handling जरूरतों के लिए oil suction और discharge होज़, जहां compatible होज़ जरूरी हो।",
+    details: [
+      "Dutron oil suction और discharge hose को अलग suction hose product के रूप में list करता है।",
+      "Supply से पहले उपयोग की compatibility confirm करनी चाहिए।"
+    ],
+    applications: ["Oil transfer", "औद्योगिक discharge", "Suction और delivery"]
+  },
+  "duct-hose": {
+    name: "Duct Hose",
+    category: "Duct होज़",
+    summary: "Light-duty suction और delivery, हवा की आवाजाही, HVAC, fume removal और light material handling के लिए बहुत हल्का, extra-flexible duct होज़।",
+    details: [
+      "वजन में बहुत हल्का।",
+      "Extra flexible, इसलिए install करना आसान।",
+      "Rigid outer reinforcement, इसलिए handling आसान।",
+      "Square type corrugated outer surface के साथ Duct Hose - Heavy भी उपलब्ध है।"
+    ],
+    applications: ["Light-duty suction और delivery", "Air और gases conveying", "Cold और warm air installation", "Motors की cooling", "Heating, ventilating और air conditioning systems", "Fume removal", "Dust और light materials handling", "Vacuum cleaning equipment", "Wheat और अन्य cereals transport", "Powder, gases और liquids transport"]
+  },
+  "high-pressure-air": {
+    name: "Duplon High Pressure Air Hose (Nylon Braided)",
+    category: "Duplon braided होज़",
+    summary: "Compressed air और industrial pneumatic उपयोग के लिए Duplon PVC braided high-pressure होज़।",
+    details: [
+      "Dutron high-pressure उपयोगों के लिए Duplon को अपनी braided hose brand के रूप में प्रस्तुत करता है।",
+      "Duplon pressure capacity और लचीलापन देने के लिए soft PVC की layers के बीच synthetic-yarn braiding use करता है।",
+      "Dutron इसे conventional rubber hoses का हल्का और किफायती replacement बताता है।"
+    ],
+    applications: ["Compressed air", "Pneumatic tools", "Workshop और construction उपयोग"]
+  },
+  "construction-water": {
+    name: "Duplon Water / Garden / Construction Hose",
+    category: "Duplon braided होज़",
+    summary: "Water, garden और construction-site conveying कामों के लिए Duplon braided होज़।",
+    details: [
+      "Dutron Water/Garden/Construction Water Hose को अपनी Duplon braided hose family में list करता है।",
+      "Duplon braided construction soft PVC layers के अंदर synthetic-yarn reinforcement use करता है।",
+      "Garden, water और site hose मांगने वाले ग्राहकों के लिए उपयोगी।"
+    ],
+    applications: ["Construction sites", "Garden और water supply", "Engineering sites"]
+  },
+  "lay-flat": {
+    name: "Lay Flat Hose",
+    category: "Flat होज़",
+    summary: "खेती, construction, mines, quarries, marine transfer और liquid discharge के लिए lay-flat delivery होज़।",
+    details: [
+      "Dutron की flat hose range discharge और delivery के लिए बनाई गई है, जहां compact storage जरूरी हो।",
+      "खेती और construction water movement के लिए practical listing।"
+    ],
+    applications: ["सिंचाई", "Construction discharge", "Mines और quarries", "Marine use"]
+  },
+  "non-toxic-pvc": {
+    name: "Non Toxic Steel Wire Food Grade Hose",
+    category: "Suction होज़",
+    summary: "ऐसे कामों के लिए non-toxic PVC होज़ जहां regular industrial होज़ suitable नहीं है।",
+    details: [
+      "Dutron के suction hose products में listed।",
+      "Potable, food या sensitive transfer use से पहले suitability पूछें।"
+    ],
+    applications: ["Non-toxic transfer", "Water movement", "Light-duty suction और delivery"]
+  },
+  "pu-hose": {
+    name: "PU Hose",
+    category: "PU होज़",
+    summary: "Ducting और flexible industrial कामों के लिए PU होज़ range।",
+    details: [
+      "Dutron PU Hose को अपनी अलग product family के रूप में list करता है।",
+      "Duct, flexible PU या industrial होज़ जरूरत पूछने वाले ग्राहकों के लिए इस listing का उपयोग करें।"
+    ],
+    applications: ["Industrial ducting", "Flexible transfer", "Dust या air handling जरूरतें"]
+  },
+  "hdpe-pipes": {
+    name: "HDPE Pipes and Fittings",
+    category: "HDPE pipes & fittings",
+    summary: "खेती, potable water supply, underground pipelines, ducts और industrial conveyance के लिए durable PE और PP pipe systems।",
+    details: [
+      "Dutron water supply, irrigation, ducts और industrial conveyance के लिए HDPE/MDPE/PP pipes list करता है।",
+      "ग्राहकों से size, pressure class और roll/length जरूरत पूछें।"
+    ],
+    applications: ["Potable water supply", "खेती की सिंचाई", "Underground ducts", "Industrial conveyance"]
+  },
+  "cpvc": {
+    name: "CPVC Pipes & Fittings",
+    category: "CPVC pipes & fittings",
+    summary: "Residential buildings, commercial complexes और institutes के लिए hot और cold potable water plumbing system।",
+    details: [
+      "Dutron CPVC hot और cold water plumbing उपयोगों के लिए positioned है।",
+      "Building contractors, plumbers और project buyers के लिए उपयोगी।"
+    ],
+    applications: ["Hot water plumbing", "Cold water plumbing", "Residential और commercial projects"]
+  },
+  "swr": {
+    name: "SWR Pipes & Fittings",
+    category: "uPVC pipes & fittings",
+    summary: "Soil, waste और rainwater drainage कामों के लिए SWR pipe और fitting systems।",
+    details: [
+      "Dutron SWR pipes और fittings को अपनी uPVC range का हिस्सा बताता है।",
+      "Residential और commercial drainage जरूरतों के लिए उपयोगी।"
+    ],
+    applications: ["Soil lines", "Waste lines", "Rainwater drainage"]
+  }
+};
+
+const termTranslations = {
+  "Sizes": "आकार",
+  "Working pressure": "कामकाजी दबाव",
+  "Bursting pressure": "फटने का दबाव",
+  "Colour": "रंग",
+  "Max temperature": "अधिकतम तापमान",
+  "Lengths": "लंबाई",
+  "Type": "प्रकार",
+  "Use": "उपयोग",
+  "Material": "सामग्री",
+  "Availability": "उपलब्धता",
+  "Application": "उपयोग",
+  "Category": "श्रेणी",
+  "Brand": "Brand",
+  "Available sizes": "उपलब्ध sizes",
+  "Also available": "यह भी उपलब्ध",
+  "Storage": "भंडारण",
+  "Pipe sizes": "Pipe sizes",
+  "Pressure": "दबाव",
+  "Temperature": "तापमान",
+  "Specification Table": "विवरण तालिका",
+  "Specification Summary": "विवरण सारांश",
+  "Specification": "विवरण",
+  "Value": "Value",
+  "Normal Size": "सामान्य size",
+  "Nominal Size": "Nominal size",
+  "Diameter": "व्यास",
+  "Bending Radius": "मुड़ने का radius",
+  "Pressure (at 30°C)": "दबाव (30°C पर)",
+  "Standard Lengths": "मानक लंबाई",
+  "Inches": "इंच",
+  "Working kg/cm²": "कामकाजी kg/cm²",
+  "Bursting kg/cm²": "फटने का kg/cm²",
+  "mtrs.": "mtrs.",
+  "Size in mm": "Size in mm",
+  "Wall Thickness in mm": "Wall thickness in mm",
+  "Working Pressure at 30°C kg/cm²": "30°C पर working pressure kg/cm²",
+  "Standard Length mtrs.": "Standard length mtrs.",
+  "Water Hose": "Water होज़",
+  "Garden Hose": "Garden होज़",
+  "Construction Water Hose": "Construction water होज़",
+  "Green": "हरा",
+  "15-50 m, depending on size": "15-50 m, साइज़ के अनुसार",
+  "Heavy-duty suction hose": "Heavy-duty suction होज़",
+  "Suction and delivery": "Suction और delivery",
+  "PVC hose system": "PVC hose system",
+  "Confirm size and pressure": "Size और pressure confirm करें",
+  "Oil suction and discharge hose": "Oil suction और discharge होज़",
+  "Oil suction/discharge": "Oil suction/discharge",
+  "Industrial transfer": "Industrial transfer",
+  "Confirm compatibility": "Compatibility confirm करें",
+  "Duct hose": "Duct होज़",
+  "Light-duty suction and delivery": "Light-duty suction और delivery",
+  "16-300 mm I.D.": "16-300 mm I.D.",
+  "Duct Hose - Heavy with square type corrugated outer surface": "Square type corrugated outer surface के साथ Duct Hose - Heavy",
+  "Duplon": "Duplon",
+  "PVC braided air hose": "PVC braided air होज़",
+  "Compressed air": "Compressed air",
+  "Duplon braided hose": "Duplon braided होज़",
+  "5-75 mm I.D. listed": "5-75 mm I.D. listed",
+  "12-50 mm I.D.": "12-50 mm I.D.",
+  "Yellow-black": "पीला-काला",
+  "Water conveying": "Water conveying",
+  "Lay-flat hose": "Lay-flat होज़",
+  "Delivery/discharge": "Delivery/discharge",
+  "Flat roll": "Flat roll",
+  "Confirm size and length": "Size और length confirm करें",
+  "Non-toxic PVC hose": "Non-toxic PVC होज़",
+  "Non-toxic transfer": "Non-toxic transfer",
+  "Confirm grade and size": "Grade और size confirm करें",
+  "PU hose": "PU होज़",
+  "Flexible ducting/transfer": "Flexible ducting/transfer",
+  "Water, irrigation, ducts": "Water, irrigation, ducts",
+  "Above or underground pipeline systems": "Above या underground pipeline systems",
+  "Hot and cold water plumbing": "Hot और cold water plumbing",
+  "SWR pipes and fittings": "SWR pipes और fittings",
+  "Soil/waste/rainwater": "Soil/waste/rainwater",
+  "Confirm type A/B and sizes": "Type A/B और sizes confirm करें"
+};
+
+const savedLanguage = localStorage.getItem("iscoLanguage");
+let activeLanguage = savedLanguage === "hi" ? "hi" : "en";
+
+function t(key, variables = {}) {
+  const copy = languageCopy[activeLanguage]?.[key] || languageCopy.en[key] || key;
+  return Object.entries(variables).reduce((text, [name, value]) => text.replaceAll(`{${name}}`, value), copy);
+}
+
+function getProductText(product) {
+  if (activeLanguage !== "hi") return product;
+  return { ...product, ...(productTranslations[product.id] || {}) };
+}
+
+function translateTerm(value) {
+  if (activeLanguage !== "hi") return value;
+  return termTranslations[value] || value;
+}
+
+function translateSpec([label, value]) {
+  return [translateTerm(label), translateTerm(value)];
+}
+
+function translateTable(table) {
+  if (activeLanguage !== "hi") return table;
+  return {
+    ...table,
+    title: translateTerm(table.title),
+    rows: table.rows.map((row) => row.map(translateTerm))
+  };
+}
+
+function applyLanguage() {
+  document.documentElement.lang = activeLanguage === "hi" ? "hi" : "en";
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    element.textContent = t(element.dataset.i18n);
+  });
+  document.querySelectorAll("[data-i18n-attr]").forEach((element) => {
+    element.dataset.i18nAttr.split(";").forEach((pair) => {
+      const [attribute, key] = pair.split(":");
+      if (attribute && key) element.setAttribute(attribute, t(key));
+    });
+  });
+  document.querySelectorAll(".language-option").forEach((button) => {
+    button.classList.toggle("active", button.dataset.language === activeLanguage);
+    button.setAttribute("aria-pressed", String(button.dataset.language === activeLanguage));
+  });
+  document.querySelector(".header-call")?.setAttribute("data-call-label", t("cta.call"));
+  document.title = t("meta.title");
+  renderCatalog();
+  if (modal?.open) {
+    const productId = modalContent?.dataset.productId;
+    const product = products.find((item) => item.id === productId);
+    if (product) openProductDetail(product);
+  }
+}
+
 const searchInput = document.querySelector("#productSearch");
 const filterButtons = [...document.querySelectorAll(".filter-button")];
 const productNeed = document.querySelector("#productNeed");
@@ -6574,34 +7011,43 @@ function renderCatalog() {
   if (!showcaseGrid) return;
   const query = searchInput.value.trim().toLowerCase();
   const visibleProducts = products.filter((product) => {
+    const localizedProduct = getProductText(product);
     const haystack = [
       product.name,
       product.category,
       product.summary,
       product.tags,
       product.applications.join(" "),
-      product.specs.map((spec) => spec.join(" ")).join(" ")
+      product.specs.map((spec) => spec.join(" ")).join(" "),
+      localizedProduct.name,
+      localizedProduct.category,
+      localizedProduct.summary,
+      localizedProduct.applications.join(" "),
+      localizedProduct.specs.map((spec) => translateSpec(spec).join(" ")).join(" ")
     ].join(" ").toLowerCase();
     return (!query || haystack.includes(query)) && matchesFilterTags(product.tags);
   });
 
-  showcaseGrid.innerHTML = visibleProducts.map((product) => `
-    <article class="showcase-card clickable-card catalog-card" tabindex="0" role="button" data-product-id="${product.id}" aria-label="View details for ${product.name}">
-      <img src="${product.image}" alt="${product.name}">
+  showcaseGrid.innerHTML = visibleProducts.map((product) => {
+    const localizedProduct = getProductText(product);
+    return `
+    <article class="showcase-card clickable-card catalog-card" tabindex="0" role="button" data-product-id="${product.id}" aria-label="${t("card.viewDetails")} ${localizedProduct.name}">
+      <img src="${product.image}" alt="${localizedProduct.name}">
       <div class="showcase-body">
-        <span class="catalog-category">${product.category}</span>
-        <h3>${product.name}</h3>
-        <p>${product.summary}</p>
+        <span class="catalog-category">${localizedProduct.category}</span>
+        <h3>${localizedProduct.name}</h3>
+        <p>${localizedProduct.summary}</p>
         <dl>
-          ${product.specs.slice(0, 3).map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join("")}
+          ${product.specs.slice(0, 3).map(translateSpec).map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join("")}
         </dl>
         <div class="showcase-actions">
-          <span class="details-link">View details</span>
-          <button type="button" class="quote-link" data-product="${product.name}">Request quote</button>
+          <span class="details-link">${t("card.viewDetails")}</span>
+          <button type="button" class="quote-link" data-product="${localizedProduct.name}">${t("card.requestQuote")}</button>
         </div>
       </div>
     </article>
-  `).join("") || `<p class="empty-state">No matching products. Try another search or clear the filter.</p>`;
+  `;
+  }).join("") || `<p class="empty-state">${t("card.empty")}</p>`;
 }
 
 function renderSpecificationTable(table) {
@@ -6613,11 +7059,11 @@ function renderSpecificationTable(table) {
 
   return `
     <section class="spec-table-card">
-      <h4>${table.title}</h4>
+      <h4>${translateTerm(table.title)}</h4>
       <div class="table-wrap modal-table">
         <table>
-          <thead><tr>${header.map((head) => `<th>${head}</th>`).join("")}</tr></thead>
-          <tbody>${bodyRows.map((row) => `<tr>${row.map((cell) => `<td>${cell}</td>`).join("")}</tr>`).join("")}</tbody>
+          <thead><tr>${header.map((head) => `<th>${translateTerm(head)}</th>`).join("")}</tr></thead>
+          <tbody>${bodyRows.map((row) => `<tr>${row.map((cell) => `<td>${translateTerm(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
         </table>
       </div>
     </section>
@@ -6626,58 +7072,60 @@ function renderSpecificationTable(table) {
 
 function getProductTables(product) {
   const sourceTables = productSpecificationTables[product.id];
-  if (sourceTables?.length) return sourceTables;
-  if (product.table?.length) return [{ title: "Specification Table", rows: product.table }];
+  if (sourceTables?.length) return sourceTables.map(translateTable);
+  if (product.table?.length) return [{ title: t("modal.specifications"), rows: product.table.map((row) => row.map(translateTerm)) }];
 
   return [{
-    title: "Specification Summary",
-    rows: [["Specification", "Value"], ...product.specs]
+    title: translateTerm("Specification Summary"),
+    rows: [[translateTerm("Specification"), translateTerm("Value")], ...product.specs.map(translateSpec)]
   }];
 }
 
 function openProductDetail(product) {
+  const localizedProduct = getProductText(product);
   const tables = getProductTables(product);
   const table = `
     <div class="modal-tables">
-      <h3>Specifications</h3>
+      <h3>${t("modal.specifications")}</h3>
       ${tables.map(renderSpecificationTable).join("")}
     </div>
   `;
 
+  modalContent.dataset.productId = product.id;
   modalContent.innerHTML = `
     <div class="modal-hero">
-      <img src="${product.image}" alt="${product.name}">
+      <img src="${product.image}" alt="${localizedProduct.name}">
       <div>
-        <span class="catalog-category">${product.category}</span>
-        <h2 id="modalTitle">${product.name}</h2>
-        <p>${product.summary}</p>
+        <span class="catalog-category">${localizedProduct.category}</span>
+        <h2 id="modalTitle">${localizedProduct.name}</h2>
+        <p>${localizedProduct.summary}</p>
       </div>
     </div>
     <div class="modal-specs">
-      ${product.specs.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join("")}
+      ${product.specs.map(translateSpec).map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join("")}
     </div>
     <div class="modal-grid">
       <section>
-        <h3>Details</h3>
-        <ul>${product.details.map((detail) => `<li>${detail}</li>`).join("")}</ul>
+        <h3>${t("modal.details")}</h3>
+        <ul>${localizedProduct.details.map((detail) => `<li>${detail}</li>`).join("")}</ul>
       </section>
       <section>
-        <h3>Applications</h3>
-        <ul>${product.applications.map((application) => `<li>${application}</li>`).join("")}</ul>
+        <h3>${t("modal.applications")}</h3>
+        <ul>${localizedProduct.applications.map((application) => `<li>${application}</li>`).join("")}</ul>
       </section>
     </div>
     ${table}
     <div class="detail-actions">
-      <button type="button" class="button primary quote-link" data-product="${product.name}">Request quote for this product</button>
+      <button type="button" class="button primary quote-link" data-product="${localizedProduct.name}">${t("modal.requestQuote")}</button>
     </div>
-    <p class="source-note">Product information summarized from Dutron India catalog pages. Confirm stock, grade, pressure class and application fit before ordering.</p>
+    <p class="source-note">${t("modal.sourceNote")}</p>
   `;
 
   modal.showModal();
 }
 
 function requestQuote(productName) {
-  productNeed.value = `Please quote for ${productName}. Size/quantity: `;
+  productNeed.value = t("quote.prefill", { product: productName });
   document.querySelector("#quote").scrollIntoView({ behavior: "smooth", block: "start" });
   productNeed.focus({ preventScroll: true });
 }
@@ -6690,6 +7138,14 @@ function scrollToPageTop() {
 }
 
 searchInput.addEventListener("input", updateProducts);
+
+document.querySelectorAll(".language-option").forEach((button) => {
+  button.addEventListener("click", () => {
+    activeLanguage = button.dataset.language === "hi" ? "hi" : "en";
+    localStorage.setItem("iscoLanguage", activeLanguage);
+    applyLanguage();
+  });
+});
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -6734,22 +7190,22 @@ document.addEventListener("keydown", (event) => {
 quoteForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const data = new FormData(quoteForm);
-  const name = data.get("name") || "Customer";
+  const name = data.get("name") || t("quote.customer");
   const phone = data.get("phone") || "";
-  const need = data.get("need") || "Dutron products";
-  const message = `Quote request from ${name}\nPhone: ${phone}\nNeed: ${need}`;
+  const need = data.get("need") || t("quote.defaultNeed");
+  const message = t("quote.message", { name, phone, need });
   const action = event.submitter?.dataset.action || "whatsapp";
 
   if (action === "email") {
-    formStatus.textContent = "Opening email with your quote request.";
-    window.location.href = `mailto:${shopEmail}?subject=${encodeURIComponent("Quote request for Dutron products")}&body=${encodeURIComponent(message)}`;
+    formStatus.textContent = t("quote.emailStatus");
+    window.location.href = `mailto:${shopEmail}?subject=${encodeURIComponent(t("quote.subject"))}&body=${encodeURIComponent(message)}`;
     return;
   }
 
-  formStatus.textContent = "Opening WhatsApp with your quote request.";
+  formStatus.textContent = t("quote.whatsappStatus");
   window.location.href = `https://wa.me/${shopPhone}?text=${encodeURIComponent(message)}`;
 });
 
 backToTopControl?.addEventListener("click", scrollToPageTop);
 
-renderCatalog();
+applyLanguage();
