@@ -849,6 +849,28 @@ h3 {
   font-weight: 850;
 }
 
+.gallery-maximize {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 7px;
+  background: rgba(10, 31, 39, 0.84);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(10, 31, 39, 0.22);
+}
+
+.gallery-maximize svg {
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
+}
+
 .gallery-controls {
   display: grid;
   grid-template-columns: 48px minmax(0, 1fr) 48px;

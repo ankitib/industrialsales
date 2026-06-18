@@ -6584,7 +6584,7 @@ const languageCopy = {
     "products.copy": "Browse the complete range of products from the house of DUTRON PLASTICS, Ahmedabad. Tap any product to view details, applications and specifications.",
     "products.search": "Search products, uses or material",
     "gallery.title": "Gallery",
-    "gallery.copy": "View product and shop photos from Industrial Sales Corporation.",
+    "gallery.copy": "View product photos from Industrial Sales Corporation Kanpur.",
     "imageZoom.open": "Enlarge image of",
     "filters.all": "All",
     "filters.agriculture": "Agriculture",
@@ -6672,7 +6672,7 @@ const languageCopy = {
     "products.copy": "DUTRON PLASTICS, Ahmedabad के उत्पादों की पूरी रेंज देखें। जानकारी, उपयोग और तकनीकी विवरण देखने के लिए किसी भी उत्पाद पर टैप करें।",
     "products.search": "उत्पाद, उपयोग या सामग्री खोजें",
     "gallery.title": "गैलरी",
-    "gallery.copy": "इंडस्ट्रियल सेल्स कॉर्पोरेशन के उत्पाद और दुकान की तस्वीरें देखें।",
+    "gallery.copy": "इंडस्ट्रियल सेल्स कॉर्पोरेशन कानपुर के उत्पादों की तस्वीरें देखें।",
     "imageZoom.open": "बड़ी तस्वीर देखें:",
     "filters.all": "सभी",
     "filters.agriculture": "खेती",
@@ -7212,6 +7212,16 @@ function moveGallery(step) {
   startGalleryTimer();
 }
 
+function maximizeGalleryImage() {
+  if (!galleryImage) return;
+  openImageZoom({
+    currentSrc: galleryImage.currentSrc || galleryImage.src,
+    src: galleryImage.src,
+    alt: galleryImage.alt,
+    dataset: { zoomTitle: `${t("gallery.title")} ${activeGalleryIndex + 1}` }
+  });
+}
+
 searchInput.addEventListener("input", updateProducts);
 
 document.querySelectorAll(".language-option").forEach((button) => {
@@ -7290,6 +7300,10 @@ galleryCarousel?.addEventListener("click", (event) => {
   }
   if (actionButton?.dataset.galleryAction === "next") {
     moveGallery(1);
+    return;
+  }
+  if (actionButton?.dataset.galleryAction === "maximize") {
+    maximizeGalleryImage();
     return;
   }
 
