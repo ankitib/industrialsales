@@ -332,14 +332,15 @@ h3 {
 
 .quick-facts div {
   padding: 13px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(42, 214, 139, 0.34);
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(10, 31, 39, 0.82);
+  box-shadow: 0 14px 28px rgba(3, 17, 22, 0.24);
   backdrop-filter: blur(12px);
 }
 
 .quick-facts dt {
-  color: rgba(255, 255, 255, 0.78);
+  color: #8ee5b8;
   font-size: 12px;
   font-weight: 850;
   text-transform: uppercase;
@@ -347,8 +348,9 @@ h3 {
 
 .quick-facts dd {
   margin: 2px 0 0;
-  color: white;
+  color: #ffffff;
   font-size: 14px;
+  font-weight: 650;
 }
 
 .hero-media {
