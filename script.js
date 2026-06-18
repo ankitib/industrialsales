@@ -1,5 +1,6 @@
 const shopPhone = "919336121245";
 const shopEmail = "industrialsalesco@gmail.com";
+const galleryImages = Array.from({ length: 21 }, (_, index) => `Gallery/Gallery_${index + 1}.jpeg`);
 
 const products = [
   {
@@ -6582,6 +6583,9 @@ const languageCopy = {
     "products.title": "Product Range",
     "products.copy": "Browse the complete range of products from the house of DUTRON PLASTICS, Ahmedabad. Tap any product to view details, applications and specifications.",
     "products.search": "Search products, uses or material",
+    "gallery.title": "Gallery",
+    "gallery.copy": "View product and shop photos from Industrial Sales Corporation.",
+    "imageZoom.open": "Enlarge image of",
     "filters.all": "All",
     "filters.agriculture": "Agriculture",
     "filters.plumbing": "Plumbing",
@@ -6667,6 +6671,9 @@ const languageCopy = {
     "products.title": "उत्पाद रेंज",
     "products.copy": "DUTRON PLASTICS, Ahmedabad के उत्पादों की पूरी रेंज देखें। जानकारी, उपयोग और तकनीकी विवरण देखने के लिए किसी भी उत्पाद पर टैप करें।",
     "products.search": "उत्पाद, उपयोग या सामग्री खोजें",
+    "gallery.title": "गैलरी",
+    "gallery.copy": "इंडस्ट्रियल सेल्स कॉर्पोरेशन के उत्पाद और दुकान की तस्वीरें देखें।",
+    "imageZoom.open": "बड़ी तस्वीर देखें:",
     "filters.all": "सभी",
     "filters.agriculture": "खेती",
     "filters.plumbing": "प्लंबिंग",
@@ -6992,9 +6999,18 @@ const formStatus = document.querySelector("#formStatus");
 const showcaseGrid = document.querySelector(".showcase-grid");
 const modal = document.querySelector("#productModal");
 const modalContent = document.querySelector("#modalContent");
+const imageZoomModal = document.querySelector("#imageZoomModal");
+const imageZoomImage = document.querySelector("#imageZoomImage");
+const imageZoomTitle = document.querySelector("#imageZoomTitle");
 const backToTopControl = document.querySelector("[data-scroll-top]");
+const galleryCarousel = document.querySelector(".gallery-carousel");
+const galleryImage = document.querySelector("#galleryImage");
+const galleryCounter = document.querySelector("#galleryCounter");
+const galleryDots = document.querySelector("#galleryDots");
 
 let activeFilter = "all";
+let activeGalleryIndex = 0;
+let galleryTimer;
 
 function matchesFilterTags(tags) {
   if (activeFilter === "all") return true;
@@ -7032,7 +7048,9 @@ function renderCatalog() {
     const localizedProduct = getProductText(product);
     return `
     <article class="showcase-card clickable-card catalog-card" tabindex="0" role="button" data-product-id="${product.id}" aria-label="${t("card.viewDetails")} ${localizedProduct.name}">
-      <img src="${product.image}" alt="${localizedProduct.name}">
+      <button class="product-image-zoom" type="button" data-zoom-trigger aria-label="${t("imageZoom.open")} ${localizedProduct.name}">
+        <img src="${product.image}" alt="${localizedProduct.name}" data-zoom-image data-zoom-title="${localizedProduct.name}">
+      </button>
       <div class="showcase-body">
         <span class="catalog-category">${localizedProduct.category}</span>
         <h3>${localizedProduct.name}</h3>
@@ -7048,6 +7066,17 @@ function renderCatalog() {
     </article>
   `;
   }).join("") || `<p class="empty-state">${t("card.empty")}</p>`;
+  bindProductImageZoom(showcaseGrid);
+}
+
+function bindProductImageZoom(scope = document) {
+  scope.querySelectorAll("[data-zoom-trigger]").forEach((trigger) => {
+    trigger.onclick = (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      openImageZoom(trigger.querySelector("[data-zoom-image]"));
+    };
+  });
 }
 
 function renderSpecificationTable(table) {
@@ -7094,7 +7123,9 @@ function openProductDetail(product) {
   modalContent.dataset.productId = product.id;
   modalContent.innerHTML = `
     <div class="modal-hero">
-      <img src="${product.image}" alt="${localizedProduct.name}">
+      <button class="product-image-zoom modal-product-image-zoom" type="button" data-zoom-trigger aria-label="${t("imageZoom.open")} ${localizedProduct.name}">
+        <img src="${product.image}" alt="${localizedProduct.name}" data-zoom-image data-zoom-title="${localizedProduct.name}">
+      </button>
       <div>
         <span class="catalog-category">${localizedProduct.category}</span>
         <h2 id="modalTitle">${localizedProduct.name}</h2>
@@ -7120,6 +7151,7 @@ function openProductDetail(product) {
     </div>
     <p class="source-note">${t("modal.sourceNote")}</p>
   `;
+  bindProductImageZoom(modalContent);
 
   modal.showModal();
 }
@@ -7130,11 +7162,54 @@ function requestQuote(productName) {
   productNeed.focus({ preventScroll: true });
 }
 
+function openImageZoom(image) {
+  if (!image || !imageZoomModal || !imageZoomImage || !imageZoomTitle) return;
+  imageZoomImage.src = image.currentSrc || image.src;
+  imageZoomImage.alt = image.alt || "";
+  imageZoomTitle.textContent = image.dataset.zoomTitle || image.alt || "";
+  imageZoomModal.showModal();
+}
+
 function scrollToPageTop() {
   document.documentElement.scrollTop = 0;
   document.body.scrollTop = 0;
   window.scrollTo({ top: 0, behavior: "smooth" });
   history.replaceState(null, "", window.location.pathname + window.location.search);
+}
+
+function renderGalleryDots() {
+  if (!galleryDots) return;
+  galleryDots.innerHTML = galleryImages.map((_, index) => `
+    <button
+      class="gallery-dot${index === activeGalleryIndex ? " active" : ""}"
+      type="button"
+      data-gallery-index="${index}"
+      aria-label="Show gallery image ${index + 1}"
+      aria-pressed="${index === activeGalleryIndex}"
+    ></button>
+  `).join("");
+}
+
+function showGalleryImage(index) {
+  if (!galleryImage || !galleryCounter) return;
+  activeGalleryIndex = (index + galleryImages.length) % galleryImages.length;
+  galleryImage.src = galleryImages[activeGalleryIndex];
+  galleryImage.alt = `Industrial Sales Corporation gallery photo ${activeGalleryIndex + 1}`;
+  galleryCounter.textContent = `${activeGalleryIndex + 1} / ${galleryImages.length}`;
+  renderGalleryDots();
+}
+
+function startGalleryTimer() {
+  if (!galleryImage) return;
+  window.clearInterval(galleryTimer);
+  galleryTimer = window.setInterval(() => {
+    showGalleryImage(activeGalleryIndex + 1);
+  }, 3000);
+}
+
+function moveGallery(step) {
+  showGalleryImage(activeGalleryIndex + step);
+  startGalleryTimer();
 }
 
 searchInput.addEventListener("input", updateProducts);
@@ -7207,5 +7282,24 @@ quoteForm.addEventListener("submit", (event) => {
 });
 
 backToTopControl?.addEventListener("click", scrollToPageTop);
+galleryCarousel?.addEventListener("click", (event) => {
+  const actionButton = event.target.closest("[data-gallery-action]");
+  if (actionButton?.dataset.galleryAction === "prev") {
+    moveGallery(-1);
+    return;
+  }
+  if (actionButton?.dataset.galleryAction === "next") {
+    moveGallery(1);
+    return;
+  }
+
+  const galleryDot = event.target.closest("[data-gallery-index]");
+  if (galleryDot) {
+    showGalleryImage(Number(galleryDot.dataset.galleryIndex));
+    startGalleryTimer();
+  }
+});
+showGalleryImage(0);
+startGalleryTimer();
 
 applyLanguage();
